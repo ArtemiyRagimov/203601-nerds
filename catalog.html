@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>
+			HTML Academy: Нёрдс
+		</title>
+
+	</head>
+
+	<body>
+	
+		<header>
+			
+			<div class="index-logo">
+				<a href="#"><img src="#" alt="Нёрдс"></a>
+			</div>
+			
+			<nav>
+				<ul>
+					<li>
+						<a href="#">
+							Студия
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Клиенты
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Магазин
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Контакты
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="cart">
+				<a href="#">
+					Корзина
+				</a>
+			</div>
+			
+			<h1>
+				Магазин готовых шаблонов
+			</h1>
+
+		</header>
+
+		<main>
+
+			<section class="filter">
+
+				<form action="#" type="get">
+					<p class="filter-text">
+						СТОИМОСТЬ:
+					</p>
+					<input type="range" name="price-slider" min="0" max="20000" step="100" value="15000">
+					<input type="text" name="price-text-from" id="price-from" value="0">
+					<label for="price-from">
+						ОТ
+					</label>
+					<input type="text" name="price-text-to" id="price-to" value="15000">
+					<label for="price-to">
+						ДО
+					</label>
+					<p class="filter-text">
+						СТОИМОСТЬ:
+					</p>
+					<p>
+						<input type="radio" name="grid" value="Адаптивная" checked>Адаптивная
+					</p>
+					<p>
+						<input type="radio" name="grid" value="Фиксированная">Фиксированная
+					</p>
+					<p>
+						<input type="radio" name="grid" value="Резиновая">Резиновая
+					</p>
+					<p class="filter-text">
+						ОСОБЕННОСТИ:
+					</p>
+					<p>
+						<input type="checkbox" name="features1" value="Слайдер" checked>Слайдер
+					</p>
+					<p>
+						<input type="checkbox" name="features2" value="Блок преимуществ">Блок преимуществ
+					</p>
+					<p>
+						<input type="checkbox" name="features3" value="Новости" checked>Новости
+					</p>
+					<p>
+						<input type="checkbox" name="features4" value="Галерея">Галерея
+					</p>
+					<p>
+						<input type="checkbox" name="features5" value="Корзина">Корзина
+					</p>
+					<button class="filter-btn" type="submit">
+						ПОКАЗАТЬ
+					</button>
+				</form>
+
+			</section>
+
+			<section class="models">
+			
+				<div class="models-filters">
+					<p class="models-filters-text">
+							СТОИМОСТЬ:
+					</p>
+					<ul class="models-filters-options">
+						<li>
+							<a href="#" class="models-filters-options-btns">
+								ПО ЦЕНЕ
+							</a>
+						</li>
+						<li>
+							<a href="#" class="models-filters-options-btns">
+								ПО ТИПУ
+							</a>
+						</li>
+						<li>
+							<a href="#" class="models-filters-options-btns">
+								ПО НАЗВАНИЮ
+							</a>
+						</li>
+					</ul>
+				<!-- Не знаю, как верстать эти стрелочки :-( -->
+				</div>
+
+				<!-- Здесь нужна таблица или порядок карточек задаётся в CSS? -->
+				<div class="models-cards">
+					<img src="#" alt="Sedona">
+						<div class="models-cards-more">
+							<p class="models-cards-more-header">
+								SEDONA
+							</p>
+							<p class="models-cards-more-text">
+								Информационный сайт 
+								для туристов
+							</p>
+							<p class="models-cards-more-price">
+								9900 РУБ.
+							</p>
+						</div>
+				</div>
+
+				<div class="models-cards">
+					<img src="#" alt="Pink">
+						<div class="models-cards-more">
+							<p class="models-cards-more-header">
+								PINK
+							</p>
+							<p class="models-cards-more-text">
+								Магазин розовых фильтров
+								для инстаграма
+							</p>
+							<p class="models-cards-more-price">
+								2000 РУБ.
+							</p>
+						</div>
+				</div>
+
+				<div class="models-cards">
+					<img src="#" alt="Borodinskiy">
+						<div class="models-cards-more">
+							<p class="models-cards-more-header">
+								BORODINSKIY
+							</p>
+							<p class="models-cards-more-text">
+								Another one barbershop
+							</p>
+							<p class="models-cards-more-price">
+								20000 РУБ.
+							</p>
+						</div>
+				</div>
+				
+				<div class="models-cards">
+					<img src="#" alt="Mishka">
+						<div class="models-cards-more">
+							<p class="models-cards-more-header">
+								MISHKA
+							</p>
+							<p class="models-cards-more-text">
+								Милые штуки ручной работы 
+								для дома
+							</p>
+							<p class="models-cards-more-price">
+								10000 РУБ.
+							</p>
+						</div>
+				</div>
+
+				<div class="models-cards">
+					<img src="#" alt="A+">
+						<div class="models-cards-more">
+							<p class="models-cards-more-header">
+								A+
+							</p>
+							<p class="models-cards-more-text">
+								Онлайн-курсы канцелярской
+								криптографии
+							</p>
+							<p class="models-cards-more-price">
+								12000 РУБ.
+							</p>
+					</div>
+				</div>
+
+				<div class="models-cards">
+					<img src="#" alt="Кваст">
+						<div class="models-cards-more">
+							<p class="models-cards-more-header">
+								КВАСТ
+							</p>
+							<p class="models-cards-more-text">
+								Крафтовый квас для вахтёров
+								и романтиков
+							</p>
+							<p class="models-cards-more-price">
+								17000 РУБ.
+							</p>
+					</div>
+				</div>
+
+				<!-- В пагинации делаем ссылки или кнопки? Не до конца понял разницу. -->
+				<div class="pagination">
+					<a class="pagination-button" href="#">
+						1
+					</a>
+					<a class="pagination-button" href="#">
+						2
+					</a>
+					<a class="pagination-button" href="#">
+						3
+					</a>
+					<a class="pagination-button" href="#">
+						СЛЕДУЮЩАЯ
+					</a>
+				</div>
+
+			</section>
+
+	
+			<section class="contacts">
+					
+				<img class="contacts-map" src="#">
+
+				<div class="contacts-info">
+					<b>
+					NЁRDS DESIGN STUDIO
+					</b>
+					<p class="conacts-info-text">
+						191186, Санкт-Петербург,
+						ул. Б. Конюшенная, д. 19/8
+						<br>
+						тел. +7 (812) 275-75-75
+					<p>
+					<a class="conacts-info-button" href="#">
+					НАПИШИТЕ НАМ
+					</a>	
+				</div>
+					
+			</section>
+
+		</main>
+
+		<footer class="main-footer">
+			
+			<div class="social">
+				<a class="social-button social-button-vk" href="#">
+					ВКонтакте
+				</a>
+				<a class="social-button social-button-fb" href="#">
+					Фейсбук
+				</a>
+				<a class="social-button social-button-inst" href="#">
+					Инстаграм
+				</a>
+				<p class="social-text-header">
+					Давайте дружить, это выгодно!
+				</p>
+				<p class="social-text">
+					Скидка 10% для друзей из социальных сетей. 
+				</p>
+			</div>
+			
+		</footer>
+
+	</body>
+
+</html>
+
