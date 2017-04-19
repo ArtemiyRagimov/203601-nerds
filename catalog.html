@@ -1,298 +1,215 @@
 <!DOCTYPE html>
-
 <html lang="ru">
 
 	<head>
 
 		<meta charset="utf-8">
-
-		<title>
-			HTML Academy: Нёрдс
-		</title>
+		<title>HTML Academy: Нёрдс</title>
 
 	</head>
 
 	<body>
-	
-		<header>
-			
-			<div class="index-logo">
-				<a href="#"><img src="#" alt="Нёрдс"></a>
+		
+		<header class="container">
+
+			<div class="index_logo">
+				<img src="#" alt="Нёрдс">
 			</div>
-			
+
 			<nav>
 				<ul>
-					<li>
-						<a href="#">
-							Студия
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							Клиенты
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							Магазин
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							Контакты
-						</a>
-					</li>
+					<li><a href="#">Студия</a></li>
+					<li><a href="#">Клиенты</a></li>
+					<li><a href="#">Магазин</a></li>
+					<li><a href="#">Контакты</a></li>
 				</ul>
 			</nav>
 
 			<div class="cart">
-				<a href="#">
-					Корзина
-				</a>
+				<a href="#">Корзина</a>
 			</div>
-			
-			<h1>
-				Магазин готовых шаблонов
-			</h1>
 
 		</header>
 
 		<main>
-
-			<section class="filter">
-
-				<form action="#" type="get">
-					<p class="filter-text">
-						СТОИМОСТЬ:
-					</p>
-					<input type="range" name="price-slider" min="0" max="20000" step="100" value="15000">
-					<input type="text" name="price-text-from" id="price-from" value="0">
-					<label for="price-from">
-						ОТ
-					</label>
-					<input type="text" name="price-text-to" id="price-to" value="15000">
-					<label for="price-to">
-						ДО
-					</label>
-					<p class="filter-text">
-						СТОИМОСТЬ:
-					</p>
-					<p>
-						<input type="radio" name="grid" value="Адаптивная" checked>Адаптивная
-					</p>
-					<p>
-						<input type="radio" name="grid" value="Фиксированная">Фиксированная
-					</p>
-					<p>
-						<input type="radio" name="grid" value="Резиновая">Резиновая
-					</p>
-					<p class="filter-text">
-						ОСОБЕННОСТИ:
-					</p>
-					<p>
-						<input type="checkbox" name="features1" value="Слайдер" checked>Слайдер
-					</p>
-					<p>
-						<input type="checkbox" name="features2" value="Блок преимуществ">Блок преимуществ
-					</p>
-					<p>
-						<input type="checkbox" name="features3" value="Новости" checked>Новости
-					</p>
-					<p>
-						<input type="checkbox" name="features4" value="Галерея">Галерея
-					</p>
-					<p>
-						<input type="checkbox" name="features5" value="Корзина">Корзина
-					</p>
-					<button class="filter-btn" type="submit">
-						ПОКАЗАТЬ
-					</button>
-				</form>
-
-			</section>
-
-			<section class="models">
 			
-				<div class="models-filters">
-					<p class="models-filters-text">
-							СТОИМОСТЬ:
-					</p>
-					<ul class="models-filters-options">
-						<li>
-							<a href="#" class="models-filters-options-btns">
-								ПО ЦЕНЕ
-							</a>
-						</li>
-						<li>
-							<a href="#" class="models-filters-options-btns">
-								ПО ТИПУ
-							</a>
-						</li>
-						<li>
-							<a href="#" class="models-filters-options-btns">
-								ПО НАЗВАНИЮ
-							</a>
-						</li>
-					</ul>
-				<!-- Не знаю, как верстать эти стрелочки :-( -->
-				</div>
+			<h1>Магазин готовых шаблонов</h1>
 
-				<!-- Здесь нужна таблица или порядок карточек задаётся в CSS? -->
-				<div class="models-cards">
-					<img src="#" alt="Sedona">
-						<div class="models-cards-more">
-							<p class="models-cards-more-header">
-								SEDONA
-							</p>
-							<p class="models-cards-more-text">
-								Информационный сайт 
-								для туристов
-							</p>
-							<p class="models-cards-more-price">
-								9900 РУБ.
-							</p>
-						</div>
-				</div>
+			<section class="main container">
 
-				<div class="models-cards">
-					<img src="#" alt="Pink">
-						<div class="models-cards-more">
-							<p class="models-cards-more-header">
-								PINK
-							</p>
-							<p class="models-cards-more-text">
-								Магазин розовых фильтров
-								для инстаграма
-							</p>
-							<p class="models-cards-more-price">
-								2000 РУБ.
-							</p>
-						</div>
-				</div>
+				<section class="filter">
 
-				<div class="models-cards">
-					<img src="#" alt="Borodinskiy">
-						<div class="models-cards-more">
-							<p class="models-cards-more-header">
-								BORODINSKIY
-							</p>
-							<p class="models-cards-more-text">
-								Another one barbershop
-							</p>
-							<p class="models-cards-more-price">
-								20000 РУБ.
-							</p>
-						</div>
-				</div>
+					<p class="filter_text">Стоимость:</p>
+					
+					<!-- Выпилил ползунок, пусть пока див повисит -->
+					<div class="range">
+						…
+					</div>	
+					
+					<div class="from_to">
+						<form action="#" method="get">
+							<input type="text" id="price_from" name="price_text_from" value="0">
+							<label for="price_from">От</label>
+						
+							<input type="text" id="price_to" name="price_text_to" value="15000">
+							<label for="price_to">До</label>
+						</form>
+					</div>
+
+					<p class="filter_text">Сетка:</p>
+					
+					<div class="radio">
+						<form action="#" method="get">
+							<input type="radio" id="adaptive" name="grid" value="Адаптивная" checked>
+							<label for="adaptive">Адаптивная</label>
+							
+							<input type="radio" id="fixed" name="grid" value="Фиксированная">
+							<label for="fixed">Фиксированная</label>
+							
+							<input type="radio" id="rubber" name="grid" value="Резиновая">
+							<label for="rubber">Резиновая</label>
+						</form>
+					</div>
+
+					<p class="filter_text">Особенности:</p>
+
+					<div class="checkbox">
+						<form action="#" method="get">
+							<input type="checkbox" id="slider" name="feature_one" value="Слайдер" checked>
+							<label for="slider">Слайдер</label>
+
+							<input type="checkbox" id="advantages" name="feature_two" value="Блок преимуществ">
+							<label for="advantages">Блок преимуществ</label>
+
+							<input type="checkbox" id="news" name="feature_three" value="Новости" checked>
+							<label for="news">Новости</label>
+
+							<input type="checkbox" id="gallery" name="feature_four" value="Галерея">
+							<label for="gallery">Галерея</label>
+
+							<input type="checkbox" id="basket" name="feature_five" value="Корзина">
+							<label for="basket"></label>
+						</form>
+					</div>
+
+					<button class="filter_button" type="submit">Показать</button>
 				
-				<div class="models-cards">
-					<img src="#" alt="Mishka">
-						<div class="models-cards-more">
-							<p class="models-cards-more-header">
-								MISHKA
-							</p>
-							<p class="models-cards-more-text">
-								Милые штуки ручной работы 
-								для дома
-							</p>
-							<p class="models-cards-more-price">
-								10000 РУБ.
-							</p>
+				</section>
+
+				<section class="models_filters">
+				
+					<p class="models_filters_text">Сортировать:</p>
+
+					<div class="models_filters_options">					
+						<ul class="models_filters_options_list">
+							<li><a href="#" class="models_filters_options_buttons">По цене</a></li>
+							<li><a href="#" class="models_filters_options_buttons">По типу</a></li>
+							<li><a href="#" class="models_filters_options_buttons">По названию</a></li>
+						</ul>
+					</div>
+
+				</section>
+				
+				<section class="models">
+
+					<div class="models_cards">
+						<img src="#" alt="Sedona">
+						<div class="models_cards_more">
+							<p class="models_cards_more_header">Sedona</p>
+							<p class="models_cards_more_text">Информационный сайт	для туристов</p>
+							<p class="models_cards_more_price">9900 руб.</p>
 						</div>
-				</div>
-
-				<div class="models-cards">
-					<img src="#" alt="A+">
-						<div class="models-cards-more">
-							<p class="models-cards-more-header">
-								A+
-							</p>
-							<p class="models-cards-more-text">
-								Онлайн-курсы канцелярской
-								криптографии
-							</p>
-							<p class="models-cards-more-price">
-								12000 РУБ.
-							</p>
 					</div>
-				</div>
 
-				<div class="models-cards">
-					<img src="#" alt="Кваст">
-						<div class="models-cards-more">
-							<p class="models-cards-more-header">
-								КВАСТ
-							</p>
-							<p class="models-cards-more-text">
-								Крафтовый квас для вахтёров
-								и романтиков
-							</p>
-							<p class="models-cards-more-price">
-								17000 РУБ.
-							</p>
+					<div class="models_cards">
+						<img src="#" alt="Pink">
+						<div class="models_cards_more">
+							<p class="models_cards_more_header">Pink</p>
+							<p class="models_cards_more_text">Продуктовый лендинг приложения для iOS и Android</p>
+							<p class="models_cards_more_price">9900 руб.</p>
+						</div>
 					</div>
-				</div>
 
-				<!-- В пагинации делаем ссылки или кнопки? Не до конца понял разницу. -->
-				<div class="pagination">
-					<a class="pagination-button" href="#">
-						1
-					</a>
-					<a class="pagination-button" href="#">
-						2
-					</a>
-					<a class="pagination-button" href="#">
-						3
-					</a>
-					<a class="pagination-button" href="#">
-						СЛЕДУЮЩАЯ
-					</a>
-				</div>
+					<div class="models_cards">
+						<img src="#" alt="Borodinskiy">
+						<div class="models_cards_more">
+							<p class="models_cards_more_header">Borodinskiy</p>
+							<p class="models_cards_more_text">Сайт салона красоты. Для мужчин, да.</p>
+							<p class="models_cards_more_price">9900 руб.</p>
+						</div>
+					</div>
+					
+					<div class="models_cards">
+						<img src="#" alt="Mishka">
+						<div class="models_cards_more">
+							<p class="models_cards_more_header">Mishka</p>
+							<p class="models_cards_more_text">Интернет-магазин вязаных игрушек</p>
+							<p class="models_cards_more_price">9900 руб.</p>
+						</div>
+					</div>
+
+					<div class="models_cards">
+						<img src="#" alt="A Plus">
+						<div class="models_cards_more">
+							<p class="models_cards_more_header">A Plus</p>
+							<p class="models_cards_more_text">Лендинг курсов повышения квалификации</p>
+							<p class="models_cards_more_price">9900 руб.</p>
+						</div>
+					</div>
+
+					<div class="models_cards">
+						<img src="#" alt="Кваст">
+						<div class="models_cards_more">
+							<p class="models_cards_more_header">Кваст</p>
+							<p class="models_cards_more_text">Промосайт производителя крафтового кваса</p>
+							<p class="models_cards_more_price">9900 руб.</p>
+						</div>
+					</div>
+
+				</section>
+
+				<section class="pagination">
+
+					<ul class="pagination_list">
+						<li><a class="pagination_button_one" href="#">1</a></li>
+						<li><a class="pagination_button_two" href="#">2</a></li>
+						<li><a class="pagination_button_three" href="#">3</a></li>
+						<li><a class="pagination_button_next" href="#">Следующая</a></li>
+					</ul>
+
+				</section>
 
 			</section>
-
+		
 	
 			<section class="contacts">
-					
-				<img class="contacts-map" src="#">
 
-				<div class="contacts-info">
-					<b>
-					NЁRDS DESIGN STUDIO
-					</b>
-					<p class="conacts-info-text">
-						191186, Санкт-Петербург,
-						ул. Б. Конюшенная, д. 19/8
-						<br>
-						тел. +7 (812) 275-75-75
-					<p>
-					<a class="conacts-info-button" href="#">
-					НАПИШИТЕ НАМ
-					</a>	
+				<img class="contacts_map" src="#">
+
+				<div class="contacts_info container">
+					<p class="contacts_info_header">Nёrds design studio</p>
+					<p class="conacts_info_text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p> 
+					<p class="conacts_info_text">тел. +7 (812) 275-75-75</p>
+					<a class="conacts_info_button" href="#">Напишите нам</a>	
 				</div>
-					
+
 			</section>
 
 		</main>
 
-		<footer class="main-footer">
-			
-			<div class="social">
-				<a class="social-button social-button-vk" href="#">
-					ВКонтакте
-				</a>
-				<a class="social-button social-button-fb" href="#">
-					Фейсбук
-				</a>
-				<a class="social-button social-button-inst" href="#">
-					Инстаграм
-				</a>
-				<p class="social-text-header">
-					Давайте дружить, это выгодно!
-				</p>
-				<p class="social-text">
-					Скидка 10% для друзей из социальных сетей. 
-				</p>
+		<footer class="main_footer container">
+				
+			<div class="social_buttons">
+				<ul>
+					<li><a class="social_button social_button_vk" href="#">ВКонтакте</a></li>
+					<li><a class="social_button social_button_fb" href="#">Фейсбук</a></li>
+					<li><a class="social_button social_button_inst" href="#">Инстаграм</a></li>
+				</ul>
+			</div>
+
+			<div class="social_text">
+				<p class="social_text_header">Давайте дружить, это выгодно!</p>
+				<p class="social_text_text">Скидка 10% для друзей из социальных сетей.</p>
 			</div>
 			
 		</footer>
@@ -300,4 +217,3 @@
 	</body>
 
 </html>
-
