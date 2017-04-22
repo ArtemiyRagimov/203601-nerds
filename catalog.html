@@ -34,158 +34,168 @@
 		</header>
 
 		<main>
+
+			<section class="main_header">
+				
+				<div class="container">
+					<h1>Магазин готовых шаблонов</h1>
+				</div>
+
+			</section>
 			
-			<h1>Магазин готовых шаблонов</h1>
+			<div class="container">
 
-			<section class="column_one">
+				<div class="side_left">
 
-				<section class="filter">
+					<section class="filter">
 
-					<p class="filter_text">Стоимость:</p>
-					
-					<!-- Выпилил ползунок, пусть пока див повисит -->
-					<div class="range">
-						…
-					</div>	
-					
-					<div class="from_to">
-						<form action="#" method="get">
-							<input type="text" id="price_from" name="price_text_from" value="0">
-							<label for="price_from">От</label>
+						<p class="filter_text">Стоимость:</p>
 						
-							<input type="text" id="price_to" name="price_text_to" value="15000">
-							<label for="price_to">До</label>
-						</form>
-					</div>
+						<!-- Выпилил ползунок, пусть пока див повисит -->
+						<div class="range">
+							…
+						</div>	
+						
+						<div class="from_to">
+							<form action="#" method="get">
+								<input type="text" id="price_from" name="price_text_from" value="0">
+								<label for="price_from">От</label>
+							
+								<input type="text" id="price_to" name="price_text_to" value="15000">
+								<label for="price_to">До</label>
+							</form>
+						</div>
 
-					<p class="filter_text">Сетка:</p>
+						<p class="filter_text">Сетка:</p>
+						
+						<div class="radio">
+							<form action="#" method="get">
+								<input type="radio" id="adaptive" name="grid" value="Адаптивная" checked>
+								<label for="adaptive">Адаптивная</label>
+								
+								<input type="radio" id="fixed" name="grid" value="Фиксированная">
+								<label for="fixed">Фиксированная</label>
+								
+								<input type="radio" id="rubber" name="grid" value="Резиновая">
+								<label for="rubber">Резиновая</label>
+							</form>
+						</div>
+
+						<p class="filter_text">Особенности:</p>
+
+						<div class="checkbox">
+							<form action="#" method="get">
+								<input type="checkbox" id="slider" name="feature_one" value="Слайдер" checked>
+								<label for="slider">Слайдер</label>
+
+								<input type="checkbox" id="advantages" name="feature_two" value="Блок преимуществ">
+								<label for="advantages">Блок преимуществ</label>
+
+								<input type="checkbox" id="news" name="feature_three" value="Новости" checked>
+								<label for="news">Новости</label>
+
+								<input type="checkbox" id="gallery" name="feature_four" value="Галерея">
+								<label for="gallery">Галерея</label>
+
+								<input type="checkbox" id="basket" name="feature_five" value="Корзина">
+								<label for="basket"></label>
+							</form>
+						</div>
+
+						<button class="filter_button" type="submit">Показать</button>
 					
-					<div class="radio">
-						<form action="#" method="get">
-							<input type="radio" id="adaptive" name="grid" value="Адаптивная" checked>
-							<label for="adaptive">Адаптивная</label>
-							
-							<input type="radio" id="fixed" name="grid" value="Фиксированная">
-							<label for="fixed">Фиксированная</label>
-							
-							<input type="radio" id="rubber" name="grid" value="Резиновая">
-							<label for="rubber">Резиновая</label>
-						</form>
-					</div>
+					</section>
 
-					<p class="filter_text">Особенности:</p>
+				</div>
 
-					<div class="checkbox">
-						<form action="#" method="get">
-							<input type="checkbox" id="slider" name="feature_one" value="Слайдер" checked>
-							<label for="slider">Слайдер</label>
+				<div class="side_right">
 
-							<input type="checkbox" id="advantages" name="feature_two" value="Блок преимуществ">
-							<label for="advantages">Блок преимуществ</label>
+					<section class="models_filters">
+					
+						<p class="models_filters_text">Сортировать:</p>
 
-							<input type="checkbox" id="news" name="feature_three" value="Новости" checked>
-							<label for="news">Новости</label>
+						<div class="models_filters_options">					
+							<ul class="models_filters_options_list">
+								<li><a href="#" class="models_filters_options_buttons">По цене</a></li>
+								<li><a href="#" class="models_filters_options_buttons">По типу</a></li>
+								<li><a href="#" class="models_filters_options_buttons">По названию</a></li>
+							</ul>
+						</div>
 
-							<input type="checkbox" id="gallery" name="feature_four" value="Галерея">
-							<label for="gallery">Галерея</label>
+					</section>
+					
+					<section class="models">
 
-							<input type="checkbox" id="basket" name="feature_five" value="Корзина">
-							<label for="basket"></label>
-						</form>
-					</div>
+						<div class="models_cards">
+							<img src="#" alt="Sedona">
+							<div class="models_cards_more">
+								<p class="models_cards_more_header">Sedona</p>
+								<p class="models_cards_more_text">Информационный сайт	для туристов</p>
+								<p class="models_cards_more_price">9900 руб.</p>
+							</div>
+						</div>
 
-					<button class="filter_button" type="submit">Показать</button>
-				
-				</section>
+						<div class="models_cards">
+							<img src="#" alt="Pink">
+							<div class="models_cards_more">
+								<p class="models_cards_more_header">Pink</p>
+								<p class="models_cards_more_text">Продуктовый лендинг приложения для iOS и Android</p>
+								<p class="models_cards_more_price">9900 руб.</p>
+							</div>
+						</div>
 
-			</section>
+						<div class="models_cards">
+							<img src="#" alt="Borodinskiy">
+							<div class="models_cards_more">
+								<p class="models_cards_more_header">Borodinskiy</p>
+								<p class="models_cards_more_text">Сайт салона красоты. Для мужчин, да.</p>
+								<p class="models_cards_more_price">9900 руб.</p>
+							</div>
+						</div>
+						
+						<div class="models_cards">
+							<img src="#" alt="Mishka">
+							<div class="models_cards_more">
+								<p class="models_cards_more_header">Mishka</p>
+								<p class="models_cards_more_text">Интернет-магазин вязаных игрушек</p>
+								<p class="models_cards_more_price">9900 руб.</p>
+							</div>
+						</div>
 
-			<section class="column_two">
+						<div class="models_cards">
+							<img src="#" alt="A Plus">
+							<div class="models_cards_more">
+								<p class="models_cards_more_header">A Plus</p>
+								<p class="models_cards_more_text">Лендинг курсов повышения квалификации</p>
+								<p class="models_cards_more_price">9900 руб.</p>
+							</div>
+						</div>
 
-				<section class="models_filters">
-				
-					<p class="models_filters_text">Сортировать:</p>
+						<div class="models_cards">
+							<img src="#" alt="Кваст">
+							<div class="models_cards_more">
+								<p class="models_cards_more_header">Кваст</p>
+								<p class="models_cards_more_text">Промосайт производителя крафтового кваса</p>
+								<p class="models_cards_more_price">9900 руб.</p>
+							</div>
+						</div>
 
-					<div class="models_filters_options">					
-						<ul class="models_filters_options_list">
-							<li><a href="#" class="models_filters_options_buttons">По цене</a></li>
-							<li><a href="#" class="models_filters_options_buttons">По типу</a></li>
-							<li><a href="#" class="models_filters_options_buttons">По названию</a></li>
+					</section>
+
+					<section class="pagination">
+
+						<ul class="pagination_list">
+							<li><a class="pagination_button_one" href="#">1</a></li>
+							<li><a class="pagination_button_two" href="#">2</a></li>
+							<li><a class="pagination_button_three" href="#">3</a></li>
+							<li><a class="pagination_button_next" href="#">Следующая</a></li>
 						</ul>
-					</div>
 
-				</section>
-				
-				<section class="models">
+					</section>
 
-					<div class="models_cards">
-						<img src="#" alt="Sedona">
-						<div class="models_cards_more">
-							<p class="models_cards_more_header">Sedona</p>
-							<p class="models_cards_more_text">Информационный сайт	для туристов</p>
-							<p class="models_cards_more_price">9900 руб.</p>
-						</div>
-					</div>
+				</div>
 
-					<div class="models_cards">
-						<img src="#" alt="Pink">
-						<div class="models_cards_more">
-							<p class="models_cards_more_header">Pink</p>
-							<p class="models_cards_more_text">Продуктовый лендинг приложения для iOS и Android</p>
-							<p class="models_cards_more_price">9900 руб.</p>
-						</div>
-					</div>
-
-					<div class="models_cards">
-						<img src="#" alt="Borodinskiy">
-						<div class="models_cards_more">
-							<p class="models_cards_more_header">Borodinskiy</p>
-							<p class="models_cards_more_text">Сайт салона красоты. Для мужчин, да.</p>
-							<p class="models_cards_more_price">9900 руб.</p>
-						</div>
-					</div>
-					
-					<div class="models_cards">
-						<img src="#" alt="Mishka">
-						<div class="models_cards_more">
-							<p class="models_cards_more_header">Mishka</p>
-							<p class="models_cards_more_text">Интернет-магазин вязаных игрушек</p>
-							<p class="models_cards_more_price">9900 руб.</p>
-						</div>
-					</div>
-
-					<div class="models_cards">
-						<img src="#" alt="A Plus">
-						<div class="models_cards_more">
-							<p class="models_cards_more_header">A Plus</p>
-							<p class="models_cards_more_text">Лендинг курсов повышения квалификации</p>
-							<p class="models_cards_more_price">9900 руб.</p>
-						</div>
-					</div>
-
-					<div class="models_cards">
-						<img src="#" alt="Кваст">
-						<div class="models_cards_more">
-							<p class="models_cards_more_header">Кваст</p>
-							<p class="models_cards_more_text">Промосайт производителя крафтового кваса</p>
-							<p class="models_cards_more_price">9900 руб.</p>
-						</div>
-					</div>
-
-				</section>
-
-				<section class="pagination">
-
-					<ul class="pagination_list">
-						<li><a class="pagination_button_one" href="#">1</a></li>
-						<li><a class="pagination_button_two" href="#">2</a></li>
-						<li><a class="pagination_button_three" href="#">3</a></li>
-						<li><a class="pagination_button_next" href="#">Следующая</a></li>
-					</ul>
-
-				</section>
-
-			</section>
+			</div>
 	
 			<section class="contacts">
 
@@ -197,24 +207,27 @@
 					<p class="conacts_info_text">тел. +7 (812) 275-75-75</p>
 					<a class="conacts_info_button" href="#">Напишите нам</a>	
 				</div>
+			
 
 			</section>
 
 		</main>
 
-		<footer class="main_footer container">
-				
-			<div class="social_buttons">
-				<ul>
-					<li><a class="social_button social_button_vk" href="#">ВКонтакте</a></li>
-					<li><a class="social_button social_button_fb" href="#">Фейсбук</a></li>
-					<li><a class="social_button social_button_inst" href="#">Инстаграм</a></li>
-				</ul>
-			</div>
+		<footer class="main_footer">
+			
+			<div class="container">	
+				<div class="social_buttons">
+					<ul>
+						<li><a class="social_button social_button_vk" href="#">ВКонтакте</a></li>
+						<li><a class="social_button social_button_fb" href="#">Фейсбук</a></li>
+						<li><a class="social_button social_button_inst" href="#">Инстаграм</a></li>
+					</ul>
+				</div>
 
-			<div class="social_text">
-				<p class="social_text_header">Давайте дружить, это выгодно!</p>
-				<p class="social_text_text">Скидка 10% для друзей из социальных сетей.</p>
+				<div class="social_text">
+					<p class="social_text_header">Давайте дружить, это выгодно!</p>
+					<p class="social_text_text">Скидка 10% для друзей из социальных сетей.</p>
+				</div>
 			</div>
 			
 		</footer>
