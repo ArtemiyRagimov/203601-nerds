@@ -1,21 +1,21 @@
 body {
-  font-size: 16pt;
-  line-height: 24pt;
+  font-size: 16px;
+  line-height: 24px;
   color: rgb(40, 49, 54);
   font-weight: normal;
   font-family: Roboto, Arial, sans-serif;
 }
 
 .container h1 {
-  font-size: 55pt;
-  line-height: 55pt;
+  font-size: 55px;
+  line-height: 55px;
   color: rgb(0, 0, 0);
   font-weight: bold;
 }
 
 .about_left h2 {
-  font-size: 45pt;
-  line-height: 45pt;
+  font-size: 45px;
+  line-height: 45px;
   color: rgb(0, 0, 0);
   font-weight: bold;
 }
