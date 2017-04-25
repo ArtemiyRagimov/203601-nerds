@@ -11,6 +11,7 @@ body {
   line-height: 55px;
   color: #000000;
   font-weight: 500;
+  text-align: center;
 }
 
 .about_left h2 {
@@ -48,7 +49,6 @@ nav.main_nav {
   width: 400px;
   margin-top: 81px;
   margin-right: 245px;
-  margin-bottom: 40px;
   font-size: 16px;
   background-color: tomato;
 }
@@ -77,6 +77,7 @@ div.cart {
 section.slider {
   background-color: #eeeeee;
   margin-bottom: 80px;
+  padding-top: 40px;
   max-height: 413px;
 }
 
@@ -200,6 +201,12 @@ section .contacts {
   background-color: white;
 }
 
+/*Вообще ширина изображения — 1440 пикселей. На моём экране оно вылезает за края,
+и окно начинает скроллиться по горизонтали. Как правильно настроить ширину?*/
+img.contacts_map {
+  width: 100%;
+}
+
 img.contacts_map {
   margin-bottom: 69px;
 }
@@ -235,3 +242,109 @@ div.social_text {
 
 /*!Начало стилей каталога*/
 
+section.main_header {
+  background-color: #eeeeee;
+  height: 164px;
+  padding-top: 76px;
+  margin-bottom: 60px;
+
+}
+
+.main {
+  font-size: 0px;
+}
+
+div.side_left {
+  display: inline-block;
+  vertical-align: top;
+  width: 260px;
+  margin-right: 140px;
+  font-size: 16px;
+  /*background-color: tomato;*/
+}
+
+div.side_right {
+  background-color: tomato;
+  display: inline-block;
+  width: 760px;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+.checkbox input,
+.radio input {
+  display: list-item;
+}
+section.models_filters {
+  /*display: inline-block*/
+}
+
+p.models_filters_text {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 267px;
+  margin-bottom: 55px;
+  background: yellow;
+}
+
+div.models_filters_options {
+  display: inline-block;
+  vertical-align: top;
+  background: yellow;
+}
+
+.models_filters_options_list li {
+  display: inline;
+}
+
+section.models {
+  /*display: inline-block;*/
+  vertical-align: top;
+}
+
+div.models_cards {
+  display: inline-block;
+  vertical-align: top;
+  width: 360px;
+
+  /*В макете отступ между карточками — 40 пикселей. 
+  Если поставить такой отступ здесь, правая карточка съезжает 
+  на вторую строку. Не могу понять, почему. Ширина блока — как 
+  в макете, 760 пикселей.*/
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+div.models_cards:last-child {
+  margin-bottom: 60px;
+}
+
+/*Поставил этой карточке в коде класс none. Не могу понять, как поставить 
+её поверх макета Седоны. Явно же не через позишн абсолют*/
+div.models_cards_more {
+  position: absolute;
+  width: 360px;
+  background-color: #eeeeee;
+}
+
+div.models_cards_more_none {
+  display: none;
+}
+
+ul.pagination {
+  display: inline-block;
+  vertical-align: top;
+  width: 443px;
+}
+
+ul.pagination {
+  display: inline-block;
+  vertical-align: top;
+  width: 443px;
+  margin-bottom: 60px;
+}
+
+.pagination li {
+  display: inline;
+  list-style-type: none;
+}
