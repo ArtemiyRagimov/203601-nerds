@@ -1,21 +1,237 @@
 body {
   font-size: 16px;
   line-height: 24px;
-  color: rgb(40, 49, 54);
-  font-weight: normal;
+  color: #283136;
   font-family: Roboto, Arial, sans-serif;
+  font-weight: 400;
 }
 
 .container h1 {
   font-size: 55px;
   line-height: 55px;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
+  color: #000000;
+  font-weight: 500;
 }
 
 .about_left h2 {
   font-size: 45px;
   line-height: 45px;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
+  color: #000000;
+  font-weight: 500;
 }
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  /*padding: 0 10px;*/
+  /*background-color: #dede72; */
+}
+
+header.main_header {
+  background-color: #eeeeee;
+  font-size: 0px;
+}
+
+div.index_logo {
+  display: inline-block;
+  vertical-align: top;
+  width: 160px;
+  margin-top: 49px;
+  margin-left: 20px;
+  margin-right: 200px;
+  /*background-color: tomato;*/
+}
+
+nav.main_nav {
+  display: inline-block;
+  vertical-align: top;
+  width: 400px;
+  margin-top: 81px;
+  margin-right: 245px;
+  margin-bottom: 40px;
+  font-size: 16px;
+  background-color: tomato;
+}
+
+li.main_nav_list {
+  display: inline;
+  padding-left: 47px;
+  list-style-type: none;
+}
+
+div.cart {
+  display: inline-block;
+  vertical-align: top;
+  width: 115px;
+  margin-right: 20px;
+  margin-top: 81px;
+  font-size: 16px;
+  background-color: tomato;
+}
+
+.slider_image_none,
+.slider_screen_none {
+  display: none;
+}
+
+section.slider {
+  background-color: #eeeeee;
+  margin-bottom: 80px;
+  max-height: 413px;
+}
+
+div.slider_screen {
+  display: inline-block;
+  vertical-align: top;
+  width: 380px;
+  margin-left: 20px;
+  margin-right: 51px;
+  margin-top: 30px;
+} 
+
+img.slider_image {
+  display: inline-block;
+  vertical-align: middle;
+  width: 698px;
+  background-color: #ff8387;
+}
+
+section.features {
+  font-size: 0px;
+}
+
+.features_item_one {
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  margin-left: 20px;
+  margin-right: 100px;
+  font-size: 16px;
+}
+
+.features_item_two {
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  margin-right: 100px;
+  font-size: 16px;
+}
+
+.features_item_three {
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  margin-right: 20px;
+  margin-bottom: 155px;
+  font-size: 16px;
+}
+
+section.about {
+  font-size: 0px;
+  margin-bottom: 75px;
+}
+
+div.about_left {
+  display: inline-block;
+  vertical-align: top;
+  width: 660px;
+  margin-right: 140px;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+div.about_right {
+  display: inline-block;
+  vertical-align: top;
+  width: 360px;
+}
+
+p.about_right_subtitle {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 17px;
+}
+
+div.about_right_fact {
+  display: inline-block;
+  vertical-align: top;
+  width: 100px;
+  padding-right: 17px;
+  font-size: 16px;
+}
+
+section.clients {
+  font-size: 0px;
+  height: 184px;
+  margin-bottom: 80px;
+  background-color: tomato;
+  font-size: 0px;
+}
+
+ul.clients_list {
+  /*как сделать, чтобы список логотипов стоял ровно посередине секции clients?*/
+}
+
+li.clients_list_logo {
+  display: inline-block;
+  vertical-align: middle;
+  width: 209px;
+  padding-left: 70px;
+  list-style-type: none;
+}
+
+section .contacts {
+  display: inline-block;
+  width: auto;
+  position: relative;
+}
+
+/*Почему контейнер у этого блока жмётся влево?*/
+.contacts_info  {
+  display: inline-block;
+  vertical-align: top;
+  position: absolute;
+  width: 319px;
+  height: 308px;
+  /*Написал, чтобы выровнять контейнер*/
+  margin-left: 65px; 
+  margin-top: 54px;
+  background-color: white;
+}
+
+img.contacts_map {
+  margin-bottom: 69px;
+}
+
+footer.main_footer {
+  font-size: 0px;
+}
+
+div.social_buttons {
+  font-size: 16px;
+}
+
+div.social_buttons {
+  display: inline-block;
+  vertical-align: top;
+  width: 260px;
+  margin-right: 120px;
+  background-color: tomato;
+}
+
+li.social_button {
+  display: inline;
+  list-style-type: none;
+}
+
+div.social_text {
+  display: inline-block;
+  vertical-align: top;
+  width: 580px;
+  font-size: 16px;
+  background-color: tomato;
+}
+
+/*!Начало стилей каталога*/
+

@@ -14,22 +14,24 @@
 		<header class="main_header">
 
 			<div class="container">
+
 				<div class="index_logo">
 					<a href="#"><img src="img/logo.png" width="160" height="65" alt="Нёрдс"><a/>
 				</div>
 
-				<nav>
+				<nav class="main_nav">
 					<ul>
-						<li><a href="#">Студия</a></li>
-						<li><a href="#">Клиенты</a></li>
-						<li><a href="catalog.html">Магазин</a></li>
-						<li><a href="#">Контакты</a></li>
+						<li class="main_nav_list"><a href="#">Студия</a></li>
+						<li class="main_nav_list"><a href="#">Клиенты</a></li>
+						<li class="main_nav_list"><a href="catalog.html">Магазин</a></li>
+						<li class="main_nav_list"><a href="#">Контакты</a></li>
 					</ul>
 				</nav>
 
 				<div class="cart">
 					<a href="#">Корзина</a>
 				</div>
+
 			</div>
 
 		</header>
@@ -39,26 +41,26 @@
 			<section class="slider">
 				
 				<div class="container">
-					<img class="slider_image" src="img/index_slide_one.png" width="698" height="413">
 					<div class="slider_screen">
 						<p class="slider_screen_header">Долго, дорого, скурпулёзно</p>	
 						<p class="slider_screen_text">Математически выверенный дизайн для&nbsp;вашего сайта или мобильного приложения.</p>
 						<a class="slider_screen_button" href="#">Узнать больше</a>
 					</div>
+					<img class="slider_image" src="img/index_slide_one.png" width="698" height="413">
 
-					<img class="slider_image" src="img/index_slide_two.png" width="664" height="430">
-					<div class="slider_screen">
+					<div class="slider_screen_none">
 						<p class="slider_screen_header">Любим математику как никто другой</p>	
 						<p class="slider_screen_text">Никакого креатива, только математические формулы для расчёта идеальных пропорций.</p>
 						<a class="slider_screen_button" href="#">Узнать больше</a>
 					</div>
+					<img class="slider_image_none" src="img/index_slide_two.png" width="664" height="430">
 					
-					<img class="slider_image" src="img/index_slide_three.png" width="760" height="411">
-					<div class="slider_screen">
+					<div class="slider_screen_none">
 						<p class="slider_screen_header">Только ночь, только хардкор</p>	
 						<p class="slider_screen_text">Работать днём, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
 						<a class="slider_screen_button" href="#">Узнать больше</a>
 					</div>
+					<img class="slider_image_none" src="img/index_slide_three.png" width="760" height="411">
 				</div>
 
 			</section>
@@ -67,21 +69,21 @@
 				
 				<section class="features">
 
-					<div class="features_item">
+					<div class="features_item_one">
 						<img class="features_item_picture" src="img/features_item_picture_one.png" width="300" height="146">
 						<p class="features_item_header">Веб-сайты</p>
 						<p class="features_item_text">Мир никогда не будет прежним, после того как увидит ваш сайт!</p>
 						<a class="features_item_button" href="#">Заказать</a>
 					</div>
 
-					<div class="features_item">
+					<div class="features_item_two">
 						<img class="features_item_picture" src="img/features_item_picture_two.png" width="300" height="146">
 						<p class="features_item_header">Приложения</p>
 						<p class="features_item_text">Покорите топ-10 приложений в AppStore и Google Play</p>
 						<a class="features_item_button" href="#">Заказать</a>
 					</div>
 
-					<div class="features_item">
+					<div class="features_item_three">
 						<img class="features_item_picture" src="img/features_item_picture_three.png" width="300" height="146">
 						<p class="features_item_header">Презентации</p>
 						<p class="features_item_text">Вы даже не подозреваете, насколько вы изумительны!</p>
@@ -134,10 +136,10 @@
 				<section class="clients">
 
 					<ul class="clients_list">
-						<li><a class="clients_list_link" href="#"><img src="img/clients_list_logo_one.png" width="199"	height="68" alt="HTML Academy"></a></li>
-						<li><a class="clients_list_link" href="#"><img src="img/clients_list_logo_two.png" width="209"	height="86" alt="Barbershop Borodinski"></a></li>
-						<li><a class="clients_list_link" href="#"><img src="img/clients_list_logo_three.png" width="185"	height="51" alt="Pink"></a></li>
-						<li><a class="clients_list_link" href="#"><img src="img/clients_list_logo_four.png" width="173"	height="84" alt="Mishka"></a></li>
+						<li class="clients_list_logo"><a class="clients_list_link" href="#"><img src="img/clients_list_logo_one.png" width="199"	height="68" alt="HTML Academy"></a></li>
+						<li class="clients_list_logo"><a class="clients_list_link" href="#"><img src="img/clients_list_logo_two.png" width="209"	height="86" alt="Barbershop Borodinski"></a></li>
+						<li class="clients_list_logo"><a class="clients_list_link" href="#"><img src="img/clients_list_logo_three.png" width="185"	height="51" alt="Pink"></a></li>
+						<li class="clients_list_logo"><a class="clients_list_link" href="#"><img src="img/clients_list_logo_four.png" width="173"	height="84" alt="Mishka"></a></li>
 					</ul>
 					
 				</section>
@@ -146,14 +148,14 @@
 
 			<section class="contacts">
 
-				<img class="contacts_map" src="img/contacts_map.png" width="1440"	height="416">
-
 				<div class="contacts_info container">
 					<p class="contacts_info_header">Nёrds design studio</p>
-					<p class="conacts_info_text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p> 
+					<p class="conacts_info_text">191186, Санкт-Петербург, ул.&nbsp;Б.&nbsp;Конюшенная, д. 19/8</p> 
 					<p class="conacts_info_text">тел. +7 (812) 275-75-75</p>
 					<a class="conacts_info_button" href="#">Напишите нам</a>	
 				</div>
+
+				<img class="contacts_map" src="img/contacts_map.png" width="1440"	height="416">
 
 			</section>
 
@@ -164,9 +166,9 @@
 			<div class="container">	
 				<div class="social_buttons">
 					<ul>
-						<li><a class="social_button social_button_vk" href="#">ВКонтакте</a></li>
-						<li><a class="social_button social_button_fb" href="#">Фейсбук</a></li>
-						<li><a class="social_button social_button_inst" href="#">Инстаграм</a></li>
+						<li class="social_button"><a class="social_button_vk" href="#">ВК</a></li>
+						<li class="social_button"><a class="social_button_fb" href="#">ФБ</a></li>
+						<li class="social_button"><a class="social_button_inst" href="#">Инст</a></li>
 					</ul>
 				</div>
 
