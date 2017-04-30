@@ -18,23 +18,20 @@ body {
 .main_header {
 	background-color: #eeeeee;
 	font-size: 0px;
+	padding: 49px 0 40px 0;
 }
 
 .index_logo {
 	display: inline-block;
 	vertical-align: top;
-	width: 160px;
-	margin: 49px 200px 0 0;
+	margin: 0 200px 0 0;
 }
 
 .main_nav {
 	display: inline-block;
 	vertical-align: top;
-	width: 400px;
-	margin-top: 81px;
-	margin-right: 245px;
+	margin: 0 245px 0 0;
 	font-size: 16px;
-	background-color: tomato;
 }
 
 .main_nav_list {
@@ -46,11 +43,7 @@ body {
 .cart {
 	display: inline-block;
 	vertical-align: top;
-	width: 115px;
-	margin-right: 20px;
-	margin-top: 81px;
 	font-size: 16px;
-	background-color: tomato;
 }
 
 
@@ -58,8 +51,7 @@ body {
 
 .slider {
 	background-color: #eeeeee;
-	margin-bottom: 80px;
-	padding-top: 40px;
+	margin: 0 0 80px 0;
 	max-height: 413px;
 }
 
@@ -67,16 +59,12 @@ body {
 	display: inline-block;
 	vertical-align: top;
 	width: 380px;
-	margin-left: 20px;
-	margin-right: 51px;
-	margin-top: 30px;
+	margin: 30px 51px 0 0;
 } 
 
 .slider_image {
 	display: inline-block;
-	vertical-align: middle;
-	width: 698px;
-	background-color: #ff8387;
+	vertical-align: top;
 }
 
 .slider_image_none,
@@ -89,14 +77,14 @@ body {
 
 .features {
 	font-size: 0px;
+	margin: 0 0 155px 0;
 }
 
 .features_item_one {
 	display: inline-block;
 	vertical-align: top;
 	width: 300px;
-	margin-left: 20px;
-	margin-right: 100px;
+	margin: 0 100px 0 0;
 	font-size: 16px;
 }
 
@@ -104,7 +92,7 @@ body {
 	display: inline-block;
 	vertical-align: top;
 	width: 300px;
-	margin-right: 100px;
+	margin: 0 100px 0 0;
 	font-size: 16px;
 }
 
@@ -112,8 +100,6 @@ body {
 	display: inline-block;
 	vertical-align: top;
 	width: 300px;
-	margin-right: 20px;
-	margin-bottom: 155px;
 	font-size: 16px;
 }
 
@@ -122,15 +108,14 @@ body {
 
 .about {
 	font-size: 0px;
-	margin-bottom: 75px;
+	margin: 0 0 75px 0;
 }
 
 .about_left {
 	display: inline-block;
 	vertical-align: top;
 	width: 660px;
-	margin-right: 140px;
-	margin-left: 20px;
+	margin: 0 140px 0 0;
 	font-size: 16px;
 }
 
@@ -167,17 +152,14 @@ body {
 
 .clients {
 	font-size: 0px;
-	height: 184px;
-	margin-bottom: 80px;
-	background-color: tomato;
-	font-size: 0px;
+	min-height: 184px;
+	margin: 0 0 80px 0;
 }
 
 .clients_list_logo {
 	display: inline-block;
 	vertical-align: middle;
-	width: 209px;
-	padding-left: 70px;
+	margin: 0 0 0 70px;
 	list-style-type: none;
 }
 
@@ -188,6 +170,7 @@ body {
 	display: inline-block;
 	width: auto;
 	position: relative;
+	margin: 0 0 69px 0;
 }
 
 .contacts_info  {
@@ -195,16 +178,15 @@ body {
 	vertical-align: top;
 	position: absolute;
 	width: 319px;
-	height: 308px;
+	min-height: 254px;
 	/*Написал, чтобы выровнять контейнер*/
-	margin-left: 65px; 
-	margin-top: 54px;
+	margin: 54px 0 0 65px;
+	padding: 54px 0 0 49px;
 	background-color: white;
 }
 
 .contacts_map {
 	width: 100%;
-	margin-bottom: 69px;
 }
 
 
@@ -218,9 +200,10 @@ body {
 	font-size: 16px;
 	display: inline-block;
 	vertical-align: top;
+	
+	/*Потом нужно будет убрать*/
 	width: 260px;
-	margin-right: 120px;
-	background-color: tomato;
+	margin: 0 140px 0 0;
 }
 
 .social_button {
@@ -231,7 +214,6 @@ body {
 .social_text {
 	display: inline-block;
 	vertical-align: top;
-	width: 580px;
 	font-size: 16px;
 	background-color: tomato;
 }
@@ -241,9 +223,9 @@ body {
 
 .main_header_bg {
 	background-color: #eeeeee;
-	height: 164px;
-	padding-top: 76px;
-	margin-bottom: 60px;
+	min-height: 164px;
+	padding: 76px 0 0 0;
+	margin: 0 0 60px 0;
 }
 
 .catalog_header {
@@ -265,7 +247,7 @@ body {
 	display: inline-block;
 	vertical-align: top;
 	width: 260px;
-	margin-right: 140px;
+	margin: 0 140px 0 0;
 	font-size: 16px;
 }
 
@@ -278,29 +260,37 @@ body {
 /*Начало стилей правой части страницы*/
 
 .side_right {
-	background-color: tomato;
 	display: inline-block;
 	width: 760px;
-	margin-right: 20px;
+	margin: 0 20px 60px 0;
 	font-size: 16px;
+}
+
+.models_filters {
+	margin: 0 0 55px 0;
 }
 
 .models_filters_text {
 	display: inline-block;
 	vertical-align: top;
-	margin-right: 267px;
-	margin-bottom: 55px;
-	background: yellow;
+	margin: 0 267px 0 0;
 }
 
 .models_filters_options {
 	display: inline-block;
 	vertical-align: top;
-	background: yellow;
+}
+
+.models_filter_options_list {
+	list-style-type: none;
 }
 
 .models_filters_options_list li {
 	display: inline;
+}
+
+.models {
+	margin-bottom: 60px;
 }
 
 .models_cards {
@@ -312,16 +302,11 @@ body {
 	Если поставить такой отступ здесь, правая карточка съезжает 
 	на вторую строку. Не могу понять, почему. Ширина блока — как 
 	в макете, 760 пикселей.*/
-	margin-right: 10px;
-	font-size: 16px;
-}
-
-.models_cards:last-child {
-	margin-bottom: 60px;
+	margin: 0 10px 0 0;
 }
 
 /*Поставил этой карточке в коде класс none. Не могу понять, как поставить 
-её поверх макета Седоны. Явно же не через позишн абсолют*/
+её поверх макета Седоны. Явно же не через позишн абсолют?*/
 .models_cards_more {
 	position: absolute;
 	width: 360px;
@@ -335,8 +320,6 @@ body {
 .pagination {
 	display: inline-block;
 	vertical-align: top;
-	width: 443px;
-	margin-bottom: 60px;
 }
 
 .pagination li {
