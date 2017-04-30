@@ -1,3 +1,9 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
 body {
 	font-size: 16px;
 	line-height: 24px;
@@ -10,6 +16,7 @@ body {
 	width: 1200px;
 	padding: 0 20px 0 20px;
 	margin: 0 auto;
+	/*background-color: #fff;*/
 }
 
 
@@ -17,33 +24,95 @@ body {
 
 .main_header {
 	background-color: #eeeeee;
+	min-height: 132px;
 	font-size: 0px;
-	padding: 49px 0 40px 0;
+}
+
+.main_header_block {
+	max-height: 65px;
+	padding: 49px 20px 18px 20px;
 }
 
 .index_logo {
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: middle;
 	margin: 0 200px 0 0;
 }
 
 .main_nav {
 	display: inline-block;
-	vertical-align: top;
-	margin: 0 245px 0 0;
-	font-size: 16px;
+	vertical-align: middle;
+	margin: 0 200px 0 0;
+}
+
+.main_nav ul {
+	list-style: none;
 }
 
 .main_nav_list {
-	display: inline;
-	padding-left: 47px;
-	list-style-type: none;
-}
-
-.cart {
 	display: inline-block;
 	vertical-align: top;
+	text-transform: uppercase;
+	font-weight: 500;
 	font-size: 16px;
+	line-height: 30px;
+}
+
+.main_nav_list a {
+	display: block;
+	color: #000000;
+  text-decoration: none;
+
+  /*Понятия не имею, как правильно увеличить активную область ссылки. Всё съезжает*/
+  padding-right: 45px;
+}
+
+.main_nav a:hover {
+	color: #fb565a;
+}
+
+.main_nav a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+/*Почему не удаётся задать корзине ширину и отсутпы, как в макете?
+	Она всё время съезжает на следующую строку.*/
+.cart {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.cart_link {
+	display: inline-block;
+	vertical-align: middle;
+	color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+	font-weight: 500;
+	padding-left: 40px;
+	position: relative;
+}
+
+/*Почему не подтягивается спрайт?!*/
+.cart_link::before {
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: 3px;
+  width: 100px;
+  height: 100px;
+  background: url("img/sprite.png") transparent no-repeat;
+  background-position: -10px -10px;
+}
+
+
+.cart a:hover {
+	color: #fb565a;
+}
+
+.cart a:active {
+	color: rgba(0, 0, 0, 0.3);
 }
 
 
@@ -178,9 +247,9 @@ body {
 	vertical-align: top;
 	position: absolute;
 	width: 319px;
-	min-height: 254px;
-	/*Написал, чтобы выровнять контейнер*/
-	margin: 54px 0 0 65px;
+	min-height: 308px;
+	top: 54px;
+	left: 65px;
 	padding: 54px 0 0 49px;
 	background-color: white;
 }
@@ -326,3 +395,49 @@ body {
 	display: inline;
 	list-style-type: none;
 }
+
+
+/*Начало стилей для спрайтов*/
+
+/*.sprite {
+    background-image: url("img/sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-cart {
+    width: 15px;
+    height: 15px;
+    background-position: -10px -10px;
+}
+
+.sprite-checkbox_off {
+    width: 23px;
+    height: 23px;
+    background-position: -10px -45px;
+}
+
+.sprite-checkbox_on {
+    width: 27px;
+    height: 23px;
+    background-position: -10px -88px;
+}
+
+.sprite-social_button_fb {
+    width: 12px;
+    height: 22px;
+    background-position: -10px -131px;
+}
+
+.sprite-social_button_inst {
+    width: 21px;
+    height: 21px;
+    background-position: -10px -173px;
+}
+
+.sprite-social_button_vk {
+    width: 26px;
+    height: 15px;
+    background-position: -10px -214px;
+}
+*/
