@@ -217,7 +217,9 @@ body {
 
 .features {
 	font-size: 0px;
-	margin: 0 0 75px 0;
+	margin: 0 0 40px 0;
+	border-bottom: solid 2px #eeeeee;
+	padding: 0 0 80px 0;
 }
 
 .features_item_one {
@@ -245,14 +247,6 @@ body {
 
 .features_item_picture {
 	margin: 0 0 26px 0;
-}
-
-.features_item_header {
-	font-size: 24px;	
-	line-height: 30px;
-	font-weight: 700;
-	color: #000000;
-	text-transform: uppercase;
 }
 
 .features_item_header {
@@ -359,11 +353,6 @@ body {
 	color: rgba(255, 255, 255, 0.3);
 }
 
-.features {
-	border-bottom: solid 2px #eeeeee;
-	padding: 0 0 80px 0;
-}
-
 /*Начало стилей блока о компании*/
 
 .about {
@@ -384,7 +373,7 @@ body {
 	line-height: 45px;
 	color: #000000;
 	font-weight: 500;
-	margin: 0 0 31px 0;
+	margin: 33px 0 31px 0;
 }
 
 .about_left_text {
@@ -437,19 +426,40 @@ body {
 	width: 360px;
 }
 
+.about_right_logo {
+	margin: 0 0 41px 0;
+}
+
+
 .about_right_subtitle {
 	font-size: 16px;
 	font-weight: bold;
 	text-transform: uppercase;
-	margin-left: 17px;
+	text-align: center;
+	margin: 0 0 52px 0;
 }
 
 .about_right_fact {
 	display: inline-block;
 	vertical-align: top;
 	width: 100px;
-	padding-right: 17px;
+	padding-right: 120px;
+}
+
+/*Как правильно поднять наверх символы процентов? Я пока что в ХТМЛ <sup> прописал.*/
+.about_right_number {
+	font-size: 45px;
+	line-height: 10px;
+	color: #000000;
+	font-weight: 700;
+	margin: 0 0 27px 0;
+}
+
+.about_right_text {
 	font-size: 16px;
+	line-height: 18px;
+	color: #283136;
+	font-weight: 400;
 }
 
 
@@ -457,15 +467,49 @@ body {
 
 .clients {
 	font-size: 0px;
-	min-height: 184px;
+	min-height: 180px;
 	margin: 0 0 80px 0;
+	border-top: 2px solid #eeeeee;
+	border-bottom: 2px solid #eeeeee;
+	position: relative;
+}
+
+/*Зафигачил вертикальные границы на флексбоксе с псевдоэлеменами, 
+но из-за них логотипы Бородинского и Пинка мерцают при наведении.*/
+.clients_vertical_border {
+	position: absolute;
+	display: flex;
+	width: 602px;
+	justify-content: space-between;
+	align-items: center;
+	top: 33%;
+	left: 25%;
+}
+
+.clients_vertical_border_itself {
+	width: 2px;
+	height: 52px;
+	background-color: #eeeeee;
+}
+
+.clients_list {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style-type: none;
+	padding: 45px 0;
 }
 
 .clients_list_logo {
-	display: inline-block;
-	vertical-align: middle;
-	margin: 0 0 0 70px;
-	list-style-type: none;
+	opacity: 0.2;
+}
+
+.clients_list_logo:hover {
+	opacity: 1;
+}
+
+.clients_list_logo:active {
+	opacity: 0.1;
 }
 
 
@@ -484,10 +528,64 @@ body {
 	position: absolute;
 	width: 319px;
 	min-height: 308px;
-	top: 54px;
-	left: 65px;
-	padding: 54px 0 0 49px;
+	top: 13%;
+	left: 7%;
+	padding: 54px 0 0 50px;
 	background-color: white;
+}
+
+.contacts_info_header {
+	font-size: 18px;
+	line-height: 30px;
+	color: #000000;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 0 0 20px 0;
+}
+
+.conacts_info_text {
+	font-size: 16px;
+	line-height: 18px;
+	color: #666666;
+	font-weight: 400;
+	margin: 0 0 20px 0;
+}
+
+.conacts_info_number {
+	font-size: 16px;
+	line-height: 18px;
+	color: #666666;
+	font-weight: 400;
+	margin: 0 0 35px 0;
+}
+
+.conacts_info_button {
+	display: inline-block;
+	padding: 20px 45px;
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
+	font-family: Roboto, Arial, sans-serif;
+	vertical-align: top;
+	text-align: center;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-decoration: none;
+	
+	background-color: #fb565a;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.conacts_info_button:hover {
+	background-color: #e74246;
+}
+
+.conacts_info_button:active {
+	background-color: #d7373b;
+	color: rgba(255, 255, 255, 0.3);
 }
 
 .contacts_map {
