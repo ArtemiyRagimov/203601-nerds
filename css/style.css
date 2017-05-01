@@ -25,7 +25,7 @@ body {
 	background-color: #eeeeee;
 	min-height: 132px;
 	font-size: 0px;
-	padding: 0 0 98px 0;
+	padding: 0 0 38px 0;
 }
 
 .main_header_block {
@@ -134,7 +134,7 @@ body {
 	display: inline-block;
 	vertical-align: top;
 	max-width: 380px;
-	margin: 0px 51px 0 0;
+	margin: 67px 51px 0 0;
 }
 
 .slider_screen_header {
@@ -592,8 +592,11 @@ body {
 	width: 100%;
 }
 
+
+/*Начало стилей футера*/
+
 .main_footer {
-	min-height: 217px;
+	min-height: 150px;
 	font-size: 0px;
 }
 
