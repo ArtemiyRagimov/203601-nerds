@@ -16,7 +16,6 @@ body {
 	width: 1200px;
 	padding: 0 20px 0 20px;
 	margin: 0 auto;
-	/*background-color: #fff;*/
 }
 
 
@@ -26,11 +25,12 @@ body {
 	background-color: #eeeeee;
 	min-height: 132px;
 	font-size: 0px;
+	padding: 0 0 98px 0;
 }
 
 .main_header_block {
-	max-height: 65px;
-	padding: 49px 20px 18px 20px;
+	min-height: 65px;
+	padding: 49px 0px 0 0;
 }
 
 .index_logo {
@@ -56,15 +56,14 @@ body {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 30px;
+	padding-right: 45px;
 }
 
 .main_nav_list a {
-	display: block;
+	display: inline-block;
+	vertical-align: top;
 	color: #000000;
 	text-decoration: none;
-
-	/*Понятия не имею, как правильно увеличить активную область ссылки. Всё съезжает*/
-	padding-right: 45px;
 }
 
 .main_nav a:hover {
@@ -126,7 +125,7 @@ body {
 .slider {
 	background-color: #eeeeee;
 	margin: 0 0 80px 0;
-	max-height: 413px;
+	min-height: 413px;
 	font-size: 0px;
 	position: relative;
 }
@@ -135,11 +134,9 @@ body {
 	display: inline-block;
 	vertical-align: top;
 	max-width: 380px;
-	margin: 30px 51px 0 0;
-	font-size: 16px;
-} 
+	margin: 0px 51px 0 0;
+}
 
-/*Почему не срабатывает это правило?!*/
 .slider_screen_header {
 	color: #000000;
 	font-size: 55px;
@@ -148,7 +145,6 @@ body {
 	margin: 0 0 23px 0;
 }
 
-/*Почему не срабатывает это правило?!*/
 .slider_screen_text {
 	color: #283136;
 	font-size: 16px;
@@ -191,17 +187,15 @@ body {
 	vertical-align: top;
 }
 
-.slider_image_none,
-.slider_screen_none {
+.slide_two,
+.slide_three {
 	display: none;
 }
 
-/*Почему если уменьшить ширину блока, точки сплющиваются?*/
 .slider_points_block {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 120px;
 	position: absolute;
 	top: 70%;
 	left: 50%;
@@ -248,6 +242,123 @@ body {
 	width: 300px;
 	font-size: 16px;
 }
+
+.features_item_picture {
+	margin: 0 0 26px 0;
+}
+
+.features_item_header {
+	font-size: 24px;	
+	line-height: 30px;
+	font-weight: 700;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.features_item_header {
+	font-size: 24px;	
+	line-height: 30px;
+	font-weight: 700;
+	color: #000000;
+	text-transform: uppercase;
+	margin: 0 0 21px 0;
+}
+
+.features_item_text {
+	font-size: 16px;	
+	line-height: 24px;
+	font-weight: 400;
+	color: #283136;
+	margin: 0 0 35px 0;
+}
+
+.features_item_button_one {
+	display: inline-block;
+	padding: 20px 40px;
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
+	font-family: Roboto, Arial, sans-serif;
+	vertical-align: top;
+	text-align: center;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-decoration: none;
+	
+	background-color: #fb565a;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.features_item_button_one:hover {
+	background-color: #e74246;
+}
+
+.features_item_button_one:active {
+	background-color: #d7373b;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.features_item_button_two {
+	display: inline-block;
+	padding: 20px 40px;
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
+	font-family: Roboto, Arial, sans-serif;
+	vertical-align: top;
+	text-align: center;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-decoration: none;
+	
+	background-color: #00ca74;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.features_item_button_two:hover {
+	background-color: #00bc6c;
+}
+
+.features_item_button_two:active {
+	background-color: #00aa62;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.features_item_button_three {
+	display: inline-block;
+	padding: 20px 40px;
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
+	font-family: Roboto, Arial, sans-serif;
+	vertical-align: top;
+	text-align: center;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-decoration: none;
+	
+	background-color: #efc84a;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.features_item_button_three:hover {
+	background-color: #eab534;
+}
+
+.features_item_button_three:active {
+	background-color: #e5a722;
+	color: rgba(255, 255, 255, 0.3);
+}
+
 
 
 /*Начало стилей блока о компании*/
