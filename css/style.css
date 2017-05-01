@@ -217,7 +217,7 @@ body {
 
 .features {
 	font-size: 0px;
-	margin: 0 0 155px 0;
+	margin: 0 0 75px 0;
 }
 
 .features_item_one {
@@ -359,7 +359,10 @@ body {
 	color: rgba(255, 255, 255, 0.3);
 }
 
-
+.features {
+	border-bottom: solid 2px #eeeeee;
+	padding: 0 0 80px 0;
+}
 
 /*Начало стилей блока о компании*/
 
@@ -381,6 +384,51 @@ body {
 	line-height: 45px;
 	color: #000000;
 	font-weight: 500;
+	margin: 0 0 31px 0;
+}
+
+.about_left_text {
+	font-size: 16px;
+	line-height: 24px;
+	color: #283136;
+	font-weight: 400;
+	margin: 0 0 45px 0;
+}
+
+.about_left_subtitle {
+	font-size: 16px;
+	line-height: 24px;
+	color: #000000;
+	font-weight: 700;
+	margin: 0 0 30px 0;
+	text-transform: uppercase;
+}
+
+.about_left_list {
+	list-style: none;
+}
+
+.about_left_list_text {
+	font-size: 16px;
+	line-height: 24px;
+	color: #283136;
+	font-weight: 400;
+	margin: 0 0 29px 0;
+	position: relative;
+	padding: 0 0 0 36px;
+}
+
+.about_left_list_text:before {
+	content: "";
+	position: absolute;
+
+	left: 1px;
+	top: 11px;
+
+	width: 25px;
+	height: 2px;
+
+	background-color: #fb565a;
 }
 
 .about_right {
