@@ -105,7 +105,7 @@ body {
 	height: 15px;
 
 	background: url("../img/sprite.png") no-repeat;
-	background-position: -10px -10px;
+	background-position: -40px -40px;
 
 	opacity: 0.3;
 }
@@ -592,33 +592,91 @@ body {
 	width: 100%;
 }
 
-
-/*Начало стилей футера*/
-
 .main_footer {
+	min-height: 217px;
 	font-size: 0px;
 }
 
 .social_buttons {
-	font-size: 16px;
 	display: inline-block;
 	vertical-align: top;
-	
-	/*Потом нужно будет убрать*/
-	width: 260px;
-	margin: 0 140px 0 0;
+	font-size: 16px;
+}
+
+.social_buttons ul {
+	list-style: none;
+	margin: 0 139px 0 0;
 }
 
 .social_button {
-	display: inline;
-	list-style-type: none;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.social_button_image {
+	display: inline-block;
+  width: 79px;
+  height: 79px;
+  margin: 0 12px;
+
+  font-size: 0;
+  vertical-align: top;
+  text-decoration: none;
+
+  background: #e1e1e1 url("../img/sprite.png") no-repeat center;
+  border-radius: 50%;
+}
+
+.social_button_vk {
+  background-position: -15px -713px;
+}
+
+.social_button_fb {
+	background-position: -7px -312px;
+}
+
+.social_button_inst {
+	background-position: -11px -516px;
+}
+
+.social_button_image:hover {
+	background-color: #e74246;
+}
+
+.social_button_image:active {
+	background-color: #d7373b;
+}
+
+.social_button_vk:active {
+  background-position: -15px -808px;
+}
+
+.social_button_fb:active {
+	background-position: -7px -414px;
+}
+
+.social_button_inst:active {
+	background-position: -11px -617px;
 }
 
 .social_text {
 	display: inline-block;
 	vertical-align: top;
+}
+
+.social_text_header {
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 700;
+	color: #000000;
+	margin: 0 0 13px 0;
+}
+
+.social_text_text {
 	font-size: 16px;
-	background-color: tomato;
+	line-height: 22px;
+	font-weight: 400;
+	color: #444444;
 }
 
 
