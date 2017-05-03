@@ -23,30 +23,32 @@ body {
 
 .main_header {
 	background-color: #eeeeee;
-	min-height: 132px;
 	font-size: 0px;
-	padding: 0 0 38px 0;
+	padding: 0 0 7px 0;
 }
 
 .main_header_block {
 	min-height: 65px;
-	padding: 49px 0px 0 0;
+	padding: 50px 0px 0 0;
 }
 
 .index_logo {
 	display: inline-block;
 	vertical-align: middle;
-	margin: 0 200px 0 0;
+	margin: 0 203px 0 0;
 }
 
 .main_nav {
 	display: inline-block;
 	vertical-align: middle;
-	margin: 0 200px 0 0;
 }
 
 .main_nav ul {
 	list-style: none;
+}
+
+li.main_nav_list:last-child {
+	padding: 0 0 0 0;
 }
 
 .main_nav_list {
@@ -89,9 +91,10 @@ body {
 	text-transform: uppercase;
 	font-size: 16px;
 	font-weight: 500;
-	padding-left: 40px;
+	padding-left: 41px;
 	position: relative;
 	line-height: 30px;
+	right: calc(50% - 307px);
 }
 
 .cart_link::before {
@@ -134,7 +137,7 @@ body {
 	display: inline-block;
 	vertical-align: top;
 	max-width: 380px;
-	margin: 67px 51px 0 0;
+	margin: 59px 51px 0 0;
 }
 
 .slider_screen_header {
@@ -142,7 +145,7 @@ body {
 	font-size: 55px;
 	font-weight: 500;
 	line-height: 55px;
-	margin: 0 0 23px 0;
+	margin: 0 0 25px 0;
 }
 
 .slider_screen_text {
@@ -150,12 +153,12 @@ body {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
-	margin: 0 0 41px 0;
+	margin: 0 0 38px 0;
 }
 
 .slider_screen_button {
 	display: inline-block;
-	padding: 19px 55px;
+	padding: 17px 55px;
 
 	font-weight: 400;
 	font-size: 16px;
@@ -197,18 +200,39 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	position: absolute;
-	top: 70%;
-	left: 50%;
+	top: 72%;
+	left: calc(50% - 44px);
 }
 
 .slider_points {
 	margin: 0 17px 0 0;
-	font-size: 16px;
 	background-color: #ffffff;
 	
 	width: 18px;
 	height: 18px;
 
+	border-radius: 50%;
+}
+
+.slider_points:last-child {
+	margin: 0 0 0 0;
+}
+
+.slider_points_active {
+	position: relative;
+}
+
+.slider_points_active:before {
+	content: "";
+	position: absolute;
+
+	left: calc(50% - 4px);
+	top: calc(50% - 4px);
+
+	width: 4px;
+	height: 4px;
+
+	border: 2px solid #c2c2c2;
 	border-radius: 50%;
 }
 
@@ -246,7 +270,7 @@ body {
 }
 
 .features_item_picture {
-	margin: 0 0 26px 0;
+	margin: 0 0 18px 0;
 }
 
 .features_item_header {
@@ -255,7 +279,7 @@ body {
 	font-weight: 700;
 	color: #000000;
 	text-transform: uppercase;
-	margin: 0 0 21px 0;
+	margin: 0 0 14px 0px;
 }
 
 .features_item_text {
@@ -263,12 +287,12 @@ body {
 	line-height: 24px;
 	font-weight: 400;
 	color: #283136;
-	margin: 0 0 35px 0;
+	margin: 0 0 33px 4px;
 }
 
 .features_item_button_one {
 	display: inline-block;
-	padding: 20px 40px;
+	padding: 16px 40px;
 
 	font-weight: 500;
 	font-size: 16px;
@@ -297,7 +321,7 @@ body {
 
 .features_item_button_two {
 	display: inline-block;
-	padding: 20px 40px;
+	padding: 16px 40px;
 
 	font-weight: 500;
 	font-size: 16px;
@@ -326,7 +350,7 @@ body {
 
 .features_item_button_three {
 	display: inline-block;
-	padding: 20px 40px;
+	padding: 16px 40px;
 
 	font-weight: 500;
 	font-size: 16px;
@@ -357,7 +381,7 @@ body {
 
 .about {
 	font-size: 0px;
-	margin: 0 0 75px 0;
+	margin: 0 0 73px 0;
 }
 
 .about_left {
@@ -373,7 +397,7 @@ body {
 	line-height: 45px;
 	color: #000000;
 	font-weight: 500;
-	margin: 33px 0 31px 0;
+	margin: 33px 0 33px 0;
 }
 
 .about_left_text {
@@ -381,7 +405,7 @@ body {
 	line-height: 24px;
 	color: #283136;
 	font-weight: 400;
-	margin: 0 0 45px 0;
+	margin: 0 0 39px 0;
 }
 
 .about_left_subtitle {
@@ -389,7 +413,7 @@ body {
 	line-height: 24px;
 	color: #000000;
 	font-weight: 700;
-	margin: 0 0 30px 0;
+	margin: 0 0 24px 0;
 	text-transform: uppercase;
 }
 
@@ -402,10 +426,15 @@ body {
 	line-height: 24px;
 	color: #283136;
 	font-weight: 400;
-	margin: 0 0 29px 0;
+	margin: 0 0 24px 0;
 	position: relative;
 	padding: 0 0 0 36px;
 }
+
+.about_left_list_text:last-child {
+	margin: 0 0 0 0;
+}
+
 
 .about_left_list_text:before {
 	content: "";
@@ -427,7 +456,7 @@ body {
 }
 
 .about_right_logo {
-	margin: 0 0 41px 0;
+	margin: 0 0 24px 0;
 }
 
 
@@ -436,7 +465,7 @@ body {
 	font-weight: bold;
 	text-transform: uppercase;
 	text-align: center;
-	margin: 0 0 52px 0;
+	margin: 0 0 41px 0;
 }
 
 .about_right_fact {
@@ -449,10 +478,15 @@ body {
 /*Как правильно поднять наверх символы процентов? Я пока что в ХТМЛ <sup> прописал.*/
 .about_right_number {
 	font-size: 45px;
-	line-height: 10px;
+	line-height: 45px;
 	color: #000000;
 	font-weight: 700;
-	margin: 0 0 27px 0;
+	margin: 0 0 19px 0;
+}
+
+.about_right_number sup {
+	top: -14px;
+	font-size: 27px;
 }
 
 .about_right_text {
@@ -471,44 +505,79 @@ body {
 	margin: 0 0 80px 0;
 	border-top: 2px solid #eeeeee;
 	border-bottom: 2px solid #eeeeee;
-	position: relative;
-}
-
-/*Зафигачил вертикальные границы на флексбоксе с псевдоэлеменами, 
-но из-за них логотипы Бородинского и Пинка мерцают при наведении.*/
-.clients_vertical_border {
-	position: absolute;
-	display: flex;
-	width: 602px;
-	justify-content: space-between;
-	align-items: center;
-	top: 33%;
-	left: 25%;
-}
-
-.clients_vertical_border_itself {
-	width: 2px;
-	height: 52px;
-	background-color: #eeeeee;
 }
 
 .clients_list {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
 	list-style-type: none;
-	padding: 45px 0;
+	padding: 42px 0;
 }
 
 .clients_list_logo {
-	opacity: 0.2;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
 }
 
-.clients_list_logo:hover {
-	opacity: 1;
+.clients_list_logo_academy {
+	padding: 0 96px 0 31px;
 }
 
-.clients_list_logo:active {
+.clients_list_logo_academy:hover {
+	opacity: 0.1;
+}
+
+.clients_list_logo_academy:active {
+	opacity: 0.1;
+}
+
+/*.clients_list_logo_academy:after {
+	content:"";
+	position: absolute;
+
+	left: 270px;
+	top: calc(50% - 26px);
+
+	width: 2px;
+	height: 52px;
+
+	background-color: #000;
+	opacity: initial;
+	all: initial;
+}*/
+
+.clients_list_logo_barbershop {
+	padding: 0 103px 0 0;
+}
+
+.clients_list_logo_barbershop:hover {
+	opacity: 0;
+}
+
+.clients_list_logo_barbershop:active {
+	opacity: 0.1;
+}
+
+.clients_list_logo_pink {
+	padding: 0 121px 0 0;
+}
+
+.clients_list_logo_pink:hover {
+	opacity: 0;
+}
+
+.clients_list_logo_pink:active {
+	opacity: 0.1;
+}
+
+.clients_list_logo_mishka {
+	/*opacity: 0.2;*/
+}
+
+.clients_list_logo_mishka:hover {
+	opacity: 0;
+}
+
+.clients_list_logo_mishka:active {
 	opacity: 0.1;
 }
 
@@ -516,10 +585,9 @@ body {
 /*Начало стилей блока с контактами и картой*/
 
 .contacts {
-	display: inline-block;
 	width: auto;
 	position: relative;
-	margin: 0 0 69px 0;
+	margin: 0 0 62px 0;
 }
 
 .contacts_info  {
@@ -528,9 +596,9 @@ body {
 	position: absolute;
 	width: 319px;
 	min-height: 308px;
-	top: 13%;
-	left: 7%;
-	padding: 54px 0 0 50px;
+	top: calc(50% - 159px);
+	left: calc(50% - 580px);
+	padding: 48px 0 0 50px;
 	background-color: white;
 }
 
@@ -540,7 +608,7 @@ body {
 	color: #000000;
 	font-weight: 700;
 	text-transform: uppercase;
-	margin: 0 0 20px 0;
+	margin: 0 0 23px 0;
 }
 
 .conacts_info_text {
@@ -548,7 +616,7 @@ body {
 	line-height: 18px;
 	color: #666666;
 	font-weight: 400;
-	margin: 0 0 20px 0;
+	margin: 0 0 18px 0;
 }
 
 .conacts_info_number {
@@ -561,7 +629,7 @@ body {
 
 .conacts_info_button {
 	display: inline-block;
-	padding: 20px 45px;
+	padding: 17px 45px;
 
 	font-weight: 500;
 	font-size: 16px;
@@ -596,8 +664,8 @@ body {
 /*Начало стилей футера*/
 
 .main_footer {
-	min-height: 150px;
 	font-size: 0px;
+	padding: 0 0 69px 0;
 }
 
 .social_buttons {
@@ -620,7 +688,7 @@ body {
 	display: inline-block;
   width: 79px;
   height: 79px;
-  margin: 0 12px;
+  margin: 0 9px 0 0;
 
   font-size: 0;
   vertical-align: top;
@@ -640,6 +708,7 @@ body {
 
 .social_button_inst {
 	background-position: -11px -516px;
+	margin-right: 0px;
 }
 
 .social_button_image:hover {
@@ -672,7 +741,7 @@ body {
 	line-height: 36px;
 	font-weight: 700;
 	color: #000000;
-	margin: 0 0 13px 0;
+	margin: 2px 0 13px 0;
 }
 
 .social_text_text {
@@ -762,7 +831,7 @@ body {
 	vertical-align: top;
 	width: 360px;
 
-	/*В макете отступ между карточками — 40 пикселей. 
+/*	В макете отступ между карточками — 40 пикселей. 
 	Если поставить такой отступ здесь, правая карточка съезжает 
 	на вторую строку. Не могу понять, почему. Ширина блока — как 
 	в макете, 760 пикселей.*/
@@ -792,7 +861,7 @@ body {
 }
 
 
-/*Начало стилей для спрайтов*/
+/*Начало стилей для спрайтов
 
 /*.sprite {
 		background-image: url("img/sprite.png");
