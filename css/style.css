@@ -24,12 +24,11 @@ body {
 .main_header {
 	background-color: #eeeeee;
 	font-size: 0px;
-	padding: 0 0 7px 0;
 }
 
 .main_header_block {
 	min-height: 65px;
-	padding: 50px 0px 0 0;
+	padding: 50px 0 0 0;
 }
 
 .index_logo {
@@ -76,8 +75,6 @@ li.main_nav_list:last-child {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-/*Почему не удаётся задать корзине ширину и отсутпы, как в макете?
-	Она всё время съезжает на следующую строку.*/
 .cart {
 	display: inline-block;
 	vertical-align: middle;
@@ -131,6 +128,7 @@ li.main_nav_list:last-child {
 	min-height: 413px;
 	font-size: 0px;
 	position: relative;
+	padding: 7px 0 0 0;
 }
 
 .slider_screen {
@@ -502,82 +500,120 @@ li.main_nav_list:last-child {
 .clients {
 	font-size: 0px;
 	min-height: 180px;
-	margin: 0 0 80px 0;
+	margin: 0 0 62px 0;
 	border-top: 2px solid #eeeeee;
 	border-bottom: 2px solid #eeeeee;
 }
 
 .clients_list {
 	list-style-type: none;
-	padding: 42px 0;
+	padding: 48px 0;
 }
 
 .clients_list_logo {
 	display: inline-block;
 	vertical-align: middle;
-	position: relative;
 }
 
 .clients_list_logo_academy {
 	padding: 0 96px 0 31px;
+	position: relative;
 }
 
-.clients_list_logo_academy:hover {
-	opacity: 0.1;
-}
-
-.clients_list_logo_academy:active {
-	opacity: 0.1;
-}
-
-/*.clients_list_logo_academy:after {
+.clients_list_logo_academy:after {
 	content:"";
 	position: absolute;
 
-	left: 270px;
-	top: calc(50% - 26px);
+	left: 280px;
+	top: calc(50% - 60px);
 
 	width: 2px;
 	height: 52px;
 
-	background-color: #000;
-	opacity: initial;
-	all: initial;
-}*/
+	background-color: #eeeeee;
+}
+
+.clients_list_logo_academy img {
+	opacity: 0.2;
+}
+
+.clients_list_logo_academy img:hover {
+	opacity: 1;
+}
+
+.clients_list_logo_academy img:active {
+	opacity: 0.1;
+}
 
 .clients_list_logo_barbershop {
 	padding: 0 103px 0 0;
+	position: relative;
 }
 
-.clients_list_logo_barbershop:hover {
-	opacity: 0;
+.clients_list_logo_barbershop:after {
+	content:"";
+	position: absolute;
+
+	left: 253px;
+	top: calc(50% - 75px);
+
+	width: 2px;
+	height: 52px;
+
+	background-color: #eeeeee;
 }
 
-.clients_list_logo_barbershop:active {
+.clients_list_logo_barbershop img {
+	opacity: 0.2;
+}
+
+.clients_list_logo_barbershop img:hover {
+	opacity: 1;
+}
+
+.clients_list_logo_barbershop img:active {
 	opacity: 0.1;
 }
 
 .clients_list_logo_pink {
 	padding: 0 121px 0 0;
+	position: relative;
 }
 
-.clients_list_logo_pink:hover {
-	opacity: 0;
+.clients_list_logo_pink:after {
+	content:"";
+	position: absolute;
+
+	left: 242px;
+	top: calc(50% - 56px);
+
+	width: 2px;
+	height: 52px;
+
+	background-color: #eeeeee;
 }
 
-.clients_list_logo_pink:active {
+.clients_list_logo_pink img {
+	opacity: 0.2;
+}
+
+.clients_list_logo_pink img:hover {
+	opacity: 1;
+}
+
+.clients_list_logo_pink img:active {
 	opacity: 0.1;
 }
 
-.clients_list_logo_mishka {
-	/*opacity: 0.2;*/
+.clients_list_logo_mishka img {
+	opacity: 0.2;
 }
 
-.clients_list_logo_mishka:hover {
-	opacity: 0;
+.clients_list_logo_mishka img:hover {
+	opacity: 1;
 }
 
-.clients_list_logo_mishka:active {
+.clients_list_logo_mishka img:active {
 	opacity: 0.1;
 }
 
@@ -741,7 +777,7 @@ li.main_nav_list:last-child {
 	line-height: 36px;
 	font-weight: 700;
 	color: #000000;
-	margin: 2px 0 13px 0;
+	margin: 5px 0 10px 0;
 }
 
 .social_text_text {
@@ -756,9 +792,8 @@ li.main_nav_list:last-child {
 
 .main_header_bg {
 	background-color: #eeeeee;
-	min-height: 164px;
-	padding: 76px 0 0 0;
-	margin: 0 0 60px 0;
+	padding: 65px 0 110px 0;
+	margin: 0 0 62px 0;
 }
 
 .catalog_header {
@@ -767,12 +802,12 @@ li.main_nav_list:last-child {
 	color: #000000;
 	font-weight: 500;
 	text-align: center;
+	margin: 0 0 0 0;
 }
 
 .main_area {
 	font-size: 0px;
 }
-
 
 /*Начало стилей левой части страницы*/
 
@@ -784,9 +819,45 @@ li.main_nav_list:last-child {
 	font-size: 16px;
 }
 
+.filter_text {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.filter_text_price {
+	margin: 0 0 56px 0;
+}
+
+.range {
+	margin: 0 0 15px 0;
+}
+
+.from_to {
+	margin: 0 0 62px 0;
+}
+
+.filter_text_grid {
+	margin: 0 0 22px 0;
+}
+
+.radio {
+	margin: 0 0 52px 0;
+}
+
 .radio input, 
 .checkbox input {
 	display: list-item;
+}
+
+.filter_text_special {
+	margin: 0 0 22px 0;
+}
+
+.checkbox {
+	margin: 0 0 49px 0;
 }
 
 
@@ -795,7 +866,7 @@ li.main_nav_list:last-child {
 .side_right {
 	display: inline-block;
 	width: 760px;
-	margin: 0 20px 60px 0;
+	margin: 0 0 60px 0;
 	font-size: 16px;
 }
 
@@ -807,6 +878,11 @@ li.main_nav_list:last-child {
 	display: inline-block;
 	vertical-align: top;
 	margin: 0 267px 0 0;
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 700;
+	color: #000000;
+	text-transform: uppercase;
 }
 
 .models_filters_options {
@@ -822,6 +898,15 @@ li.main_nav_list:last-child {
 	display: inline;
 }
 
+.models_filters_options_buttons {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 18px;
+	color: #000000;
+	margin: 0 16px 0 0;
+}
+
 .models {
 	margin-bottom: 60px;
 }
@@ -829,14 +914,13 @@ li.main_nav_list:last-child {
 .models_cards {
 	display: inline-block;
 	vertical-align: top;
-	width: 360px;
-
-/*	В макете отступ между карточками — 40 пикселей. 
-	Если поставить такой отступ здесь, правая карточка съезжает 
-	на вторую строку. Не могу понять, почему. Ширина блока — как 
-	в макете, 760 пикселей.*/
-	margin: 0 10px 0 0;
+	margin: 0 30px 0 0;
 }
+
+.models_cards:nth-child(even) {
+	margin: 0 0 0 0;
+}
+
 
 /*Поставил этой карточке в коде класс none. Не могу понять, как поставить 
 её поверх макета Седоны. Явно же не через позишн абсолют?*/

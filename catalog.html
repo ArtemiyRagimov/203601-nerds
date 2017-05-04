@@ -13,25 +13,31 @@
 
 	<body>
 		
+		<body>
+		
 		<header class="main_header">
-			
-			<div class="main_header_block container">
-				<div class="index_logo">
-					<a href="index.html"><img src="img/logo.png" width="160" height="65" alt="Нёрдс"></a>
+
+			<div class="container">
+
+				<div class="main_header_block">
+					<div class="index_logo">
+						<a><img src="img/logo.png" width="160" height="65" alt="Нёрдс"></a>
+					</div>
+
+					<nav class="main_nav">
+						<ul>
+							<li class="main_nav_list"><a href="#">Студия</a></li>
+							<li class="main_nav_list"><a href="#">Клиенты</a></li>
+							<li class="main_nav_list"><a href="catalog.html">Магазин</a></li>
+							<li class="main_nav_list"><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+
+					<div class="cart">
+						<a class="cart_link" href="#">Корзина</a>
+					</div>
 				</div>
 
-				<nav class="main_nav">
-					<ul>
-						<li class="main_nav_list"><a href="#">Студия</a></li>
-						<li class="main_nav_list"><a href="#">Клиенты</a></li>
-						<li class="main_nav_list"><a href="catalog.html">Магазин</a></li>
-						<li class="main_nav_list"><a href="#">Контакты</a></li>
-					</ul>
-				</nav>
-
-				<div class="cart">
-					<a href="#">Корзина</a>
-				</div>
 			</div>
 
 		</header>
@@ -52,11 +58,10 @@
 
 					<section class="filter">
 
-						<p class="filter_text">Стоимость:</p>
+						<p class="filter_text filter_text_price">Стоимость:</p>
 						
-						<!-- Выпилил ползунок, пусть пока див повисит -->
 						<div class="range">
-							…
+							ПОЛЗУНОК
 						</div>	
 						
 						<div class="from_to">
@@ -69,7 +74,7 @@
 							</form>
 						</div>
 
-						<p class="filter_text">Сетка:</p>
+						<p class="filter_text filter_text_grid">Сетка:</p>
 						
 						<div class="radio">
 							<form action="#" method="get">
@@ -84,7 +89,7 @@
 							</form>
 						</div>
 
-						<p class="filter_text">Особенности:</p>
+						<p class="filter_text filter_text_special">Особенности:</p>
 
 						<div class="checkbox">
 							<form action="#" method="get">
@@ -232,13 +237,12 @@
 
 				<div class="contacts_info container">
 					<p class="contacts_info_header">Nёrds design studio</p>
-					<p class="conacts_info_text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p> 
-					<p class="conacts_info_text">тел. +7 (812) 275-75-75</p>
+					<p class="conacts_info_text">191186, Санкт-Петербург, ул.&nbsp;Б.&nbsp;Конюшенная, д. 19/8</p> 
+					<p class="conacts_info_number">тел. +7 (812) 275-75-75</p>
 					<a class="conacts_info_button" href="#">Напишите нам</a>	
 				</div>
 
 				<img class="contacts_map" src="img/contacts_map.png" width="1440"	height="416">
-			
 
 			</section>
 
@@ -249,9 +253,9 @@
 			<div class="container">	
 				<div class="social_buttons">
 					<ul>
-						<li class="social_button"><a class="social_button_vk" href="#">ВК</a></li>
-						<li class="social_button"><a class="social_button_fb" href="#">ФБ</a></li>
-						<li class="social_button"><a class="social_button_inst" href="#">Инст</a></li>
+						<li class="social_button"><a class="social_button_image social_button_vk" href="#">ВКонтакте</a></li>
+						<li class="social_button"><a class="social_button_image social_button_fb" href="#">Фейсбук</a></li>
+						<li class="social_button"><a class="social_button_image social_button_inst" href="#">Инстаграм</a></li>
 					</ul>
 				</div>
 
