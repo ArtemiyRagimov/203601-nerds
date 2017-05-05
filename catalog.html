@@ -52,182 +52,200 @@
 
 			</section>
 			
-			<div class="main_area container">
+			<div class="container">
 
-				<div class="side_left">
+				<div class="main_area">
 
-					<section class="filter">
+					<div class="side_left">
 
-						<p class="filter_text filter_text_price">Стоимость:</p>
+						<section class="filter">
+
+							<p class="filter_text filter_text_price">Стоимость:</p>
+							
+							<div class="range">
+								ПОЛЗУНОК
+							</div>	
+							
+							<div class="from_to">
+								<form action="#" method="get">
+									<label for="price_from">От</label>
+									<input type="text" id="price_from" name="price_text_from" value="0">
+									
+									<label for="price_to">До</label>
+									<input type="text" id="price_to" name="price_text_to" value="15000">
+								</form>
+							</div>
+
+							<p class="filter_text filter_text_grid">Сетка:</p>
+							
+							<div class="radio">
+								<form action="#" method="get">
+									<input type="radio" id="adaptive" name="grid" value="Адаптивная" checked>
+									<label for="adaptive">Адаптивная</label>
+									
+									<input type="radio" id="fixed" name="grid" value="Фиксированная">
+									<label for="fixed">Фиксированная</label>
+									
+									<input type="radio" id="rubber" name="grid" value="Резиновая">
+									<label for="rubber">Резиновая</label>
+								</form>
+							</div>
+
+							<p class="filter_text filter_text_special">Особенности:</p>
+
+							<div class="checkbox">
+								<form action="#" method="get">
+									<input type="checkbox" id="slider" name="feature_one" value="Слайдер" checked>
+									<label for="slider">Слайдер</label>
+
+									<input type="checkbox" id="advantages" name="feature_two" value="Блок преимуществ">
+									<label for="advantages">Блок преимуществ</label>
+
+									<input type="checkbox" id="news" name="feature_three" value="Новости" checked>
+									<label for="news">Новости</label>
+
+									<input type="checkbox" id="gallery" name="feature_four" value="Галерея">
+									<label for="gallery">Галерея</label>
+
+									<input type="checkbox" id="basket" name="feature_five" value="Корзина">
+									<label for="basket"></label>
+								</form>
+							</div>
+
+							<button class="filter_button" type="submit">Показать</button>
 						
-						<div class="range">
-							ПОЛЗУНОК
-						</div>	
+						</section>
+
+					</div>
+
+					<div class="side_right">
+
+						<section class="models_filters">
 						
-						<div class="from_to">
-							<form action="#" method="get">
-								<label for="price_from">От</label>
-								<input type="text" id="price_from" name="price_text_from" value="0">
+							<p class="models_filters_text">Сортировать:</p>
+
+							<div class="models_filters_options">					
+								<ul class="models_filters_options_list">
+									<li><a href="#" class="models_filters_options_buttons">По цене</a></li>
+									<li><a href="#" class="models_filters_options_buttons">По типу</a></li>
+									<li><a href="#" class="models_filters_options_buttons">По названию</a></li>
+									<li><a href="#" class="models_filters_options_buttons">1</a></li>
+									<li><a href="#" class="models_filters_options_buttons">1</a></li>
+								</ul>
+							</div>
+
+						</section>
+						
+						<section class="models">
+
+							<div class="models_cards">
 								
-								<label for="price_to">До</label>
-								<input type="text" id="price_to" name="price_text_to" value="15000">
-							</form>
-						</div>
+								<div class="models_cards_browser">
+									<div class="browser_container">
+										<label class="browser_points"></label>
+										<label class="browser_points"></label>
+										<label class="browser_points"></label>
+									</div>								
+								</div>
 
-						<p class="filter_text filter_text_grid">Сетка:</p>
-						
-						<div class="radio">
-							<form action="#" method="get">
-								<input type="radio" id="adaptive" name="grid" value="Адаптивная" checked>
-								<label for="adaptive">Адаптивная</label>
-								
-								<input type="radio" id="fixed" name="grid" value="Фиксированная">
-								<label for="fixed">Фиксированная</label>
-								
-								<input type="radio" id="rubber" name="grid" value="Резиновая">
-								<label for="rubber">Резиновая</label>
-							</form>
-						</div>
-
-						<p class="filter_text filter_text_special">Особенности:</p>
-
-						<div class="checkbox">
-							<form action="#" method="get">
-								<input type="checkbox" id="slider" name="feature_one" value="Слайдер" checked>
-								<label for="slider">Слайдер</label>
-
-								<input type="checkbox" id="advantages" name="feature_two" value="Блок преимуществ">
-								<label for="advantages">Блок преимуществ</label>
-
-								<input type="checkbox" id="news" name="feature_three" value="Новости" checked>
-								<label for="news">Новости</label>
-
-								<input type="checkbox" id="gallery" name="feature_four" value="Галерея">
-								<label for="gallery">Галерея</label>
-
-								<input type="checkbox" id="basket" name="feature_five" value="Корзина">
-								<label for="basket"></label>
-							</form>
-						</div>
-
-						<button class="filter_button" type="submit">Показать</button>
-					
-					</section>
-
-				</div>
-
-				<div class="side_right">
-
-					<section class="models_filters">
-					
-						<p class="models_filters_text">Сортировать:</p>
-
-						<div class="models_filters_options">					
-							<ul class="models_filters_options_list">
-								<li><a href="#" class="models_filters_options_buttons">По цене</a></li>
-								<li><a href="#" class="models_filters_options_buttons">По типу</a></li>
-								<li><a href="#" class="models_filters_options_buttons">По названию</a></li>
-								<li><a href="#" class="models_filters_options_buttons"></a>1</li>
-								<li><a href="#" class="models_filters_options_buttons"></a>1</li>
-							</ul>
-						</div>
-
-					</section>
-					
-					<section class="models">
-
-						<div class="models_cards">
-							<div class="models_cards_browser">
-								<span>.</span>
-								<span>.</span>
-								<span>.</span>								
+								<img class="models_cards_model" src="img/models_cards_sedona.jpg" width="360" heigth="576" alt="Sedona">
+								<div class="models_cards_more_none">
+									<p class="models_cards_more_header">Sedona</p>
+									<p class="models_cards_more_text">Информационный сайт	для туристов</p>
+									<p class="models_cards_more_price">9900 руб.</p>
+								</div>
 							</div>
-							<img class="models_cards_model" src="img/models_cards_sedona.jpg" width="360" heigth="576" alt="Sedona">
-							<div class="models_cards_more_none">
-								<p class="models_cards_more_header">Sedona</p>
-								<p class="models_cards_more_text">Информационный сайт	для туристов</p>
-								<p class="models_cards_more_price">9900 руб.</p>
-							</div>
-						</div>
 
-						<div class="models_cards">
-							<div class="models_cards_browser">
-								<span>.</span>
-								<span>.</span>
-								<span>.</span>								
+							<div class="models_cards">
+								<div class="models_cards_browser">
+									<div class="browser_container">
+										<label class="browser_points"></label>
+										<label class="browser_points"></label>
+										<label class="browser_points"></label>
+									</div>								
+								</div>
+								<img class="models_cards_model" src="img/models_cards_pink.jpg" width="360" heigth="576" alt="Pink">
+								<div class="models_cards_more_none">
+									<p class="models_cards_more_header">Pink</p>
+									<p class="models_cards_more_text">Продуктовый лендинг приложения для iOS и Android</p>
+									<p class="models_cards_more_price">9900 руб.</p>
+								</div>
 							</div>
-							<img class="models_cards_model" src="img/models_cards_pink.jpg" width="360" heigth="576" alt="Pink">
-							<div class="models_cards_more_none">
-								<p class="models_cards_more_header">Pink</p>
-								<p class="models_cards_more_text">Продуктовый лендинг приложения для iOS и Android</p>
-								<p class="models_cards_more_price">9900 руб.</p>
-							</div>
-						</div>
 
-						<div class="models_cards">
-							<div class="models_cards_browser">
-								<span>.</span>
-								<span>.</span>
-								<span>.</span>								
+							<div class="models_cards">
+								<div class="models_cards_browser">
+									<div class="browser_container">
+										<label class="browser_points"></label>
+										<label class="browser_points"></label>
+										<label class="browser_points"></label>
+									</div>								
+								</div>
+								<img class="models_cards_model" src="img/models_cards_borodinskiy.jpg" width="360" heigth="576" alt="Borodinskiy">
+								<div class="models_cards_more_none">
+									<p class="models_cards_more_header">Borodinskiy</p>
+									<p class="models_cards_more_text">Сайт салона красоты. Для мужчин, да.</p>
+									<p class="models_cards_more_price">9900 руб.</p>
+								</div>
 							</div>
-							<img class="models_cards_model" src="img/models_cards_borodinskiy.jpg" width="360" heigth="576" alt="Borodinskiy">
-							<div class="models_cards_more_none">
-								<p class="models_cards_more_header">Borodinskiy</p>
-								<p class="models_cards_more_text">Сайт салона красоты. Для мужчин, да.</p>
-								<p class="models_cards_more_price">9900 руб.</p>
+							
+							<div class="models_cards">
+								<div class="models_cards_browser">
+									<div class="browser_container">
+										<label class="browser_points"></label>
+										<label class="browser_points"></label>
+										<label class="browser_points"></label>
+									</div>								
+								</div>
+								<img class="models_cards_model" src="img/models_cards_mishka.jpg" width="360" heigth="576" alt="Mishka">
+								<div class="models_cards_more_none">
+									<p class="models_cards_more_header">Mishka</p>
+									<p class="models_cards_more_text">Интернет-магазин вязаных игрушек</p>
+									<p class="models_cards_more_price">9900 руб.</p>
+								</div>
 							</div>
-						</div>
-						
-						<div class="models_cards">
-							<div class="models_cards_browser">
-								<span>.</span>
-								<span>.</span>
-								<span>.</span>								
-							</div>
-							<img class="models_cards_model" src="img/models_cards_mishka.jpg" width="360" heigth="576" alt="Mishka">
-							<div class="models_cards_more_none">
-								<p class="models_cards_more_header">Mishka</p>
-								<p class="models_cards_more_text">Интернет-магазин вязаных игрушек</p>
-								<p class="models_cards_more_price">9900 руб.</p>
-							</div>
-						</div>
 
-						<div class="models_cards">
-							<div class="models_cards_browser">
-								<span>.</span>
-								<span>.</span>
-								<span>.</span>								
+							<div class="models_cards">
+								<div class="models_cards_browser">
+									<div class="browser_container">
+										<label class="browser_points"></label>
+										<label class="browser_points"></label>
+										<label class="browser_points"></label>
+									</div>								
+								</div>
+								<img class="models_cards_model" src="img/models_cards_aplus.jpg" width="360" heigth="576" alt="APlus">
+								<div class="models_cards_more_none">
+									<p class="models_cards_more_header">A Plus</p>
+									<p class="models_cards_more_text">Лендинг курсов повышения квалификации</p>
+									<p class="models_cards_more_price">9900 руб.</p>
+								</div>
 							</div>
-							<img class="models_cards_model" src="img/models_cards_aplus.jpg" width="360" heigth="576" alt="APlus">
-							<div class="models_cards_more_none">
-								<p class="models_cards_more_header">A Plus</p>
-								<p class="models_cards_more_text">Лендинг курсов повышения квалификации</p>
-								<p class="models_cards_more_price">9900 руб.</p>
-							</div>
-						</div>
 
-						<div class="models_cards">
-							<div class="models_cards_browser">
-								<span>.</span>
-								<span>.</span>
-								<span>.</span>								
+							<div class="models_cards">
+								<div class="models_cards_browser">
+									<div class="browser_container">
+										<label class="browser_points"></label>
+										<label class="browser_points"></label>
+										<label class="browser_points"></label>
+									</div>								
+								</div>
+								<img class="models_cards_model" src="img/models_cards_kvast.jpg" width="360" heigth="576" alt="Кваст">
+								<div class="models_cards_more_none">
+									<p class="models_cards_more_header">Кваст</p>
+									<p class="models_cards_more_text">Промосайт производителя крафтового кваса</p>
+									<p class="models_cards_more_price">9900 руб.</p>
+								</div>
 							</div>
-							<img class="models_cards_model" src="img/models_cards_kvast.jpg" width="360" heigth="576" alt="Кваст">
-							<div class="models_cards_more_none">
-								<p class="models_cards_more_header">Кваст</p>
-								<p class="models_cards_more_text">Промосайт производителя крафтового кваса</p>
-								<p class="models_cards_more_price">9900 руб.</p>
-							</div>
-						</div>
 
-					</section>
+						</section>
 
-					<ul class="pagination">
-						<li><a class="pagination_button_active" href="#">1</a></li>
-						<li><a class="pagination_button" href="#">2</a></li>
-						<li><a class="pagination_button" href="#">3</a></li>
-						<li><a class="pagination_button" href="#">Следующая</a></li>
-					</ul>
+						<ul class="pagination">
+							<li class="pagination_button_active"><a class="pagination_button_link_active" href="#">1</a></li>
+							<li class="pagination_button"><a class="pagination_button_link" href="#">2</a></li>
+							<li class="pagination_button" ><a class="pagination_button_link" href="#">3</a></li>
+							<li class="pagination_button_next" ><a class="pagination_button_link_next" href="#">Следующая</a></li>
+						</ul>
+
+					</div>
 
 				</div>
 

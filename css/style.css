@@ -19,6 +19,8 @@ body {
 }
 
 
+
+
 /*Начало стилей шапки*/
 
 .main_header {
@@ -76,8 +78,8 @@ li.main_nav_list:last-child {
 }
 
 .cart {
-	display: inline-block;
-	vertical-align: middle;
+	float: right;
+	margin: 23px 0 0 0;
 }
 
 .cart_link {
@@ -91,7 +93,6 @@ li.main_nav_list:last-child {
 	padding-left: 41px;
 	position: relative;
 	line-height: 30px;
-	right: calc(50% - 307px);
 }
 
 .cart_link::before {
@@ -129,6 +130,7 @@ li.main_nav_list:last-child {
 	font-size: 0px;
 	position: relative;
 	padding: 7px 0 0 0;
+	clear: both;
 }
 
 .slider_screen {
@@ -469,7 +471,7 @@ li.main_nav_list:last-child {
 .about_right_fact {
 	display: inline-block;
 	vertical-align: top;
-	width: 100px;
+	width: 120px;
 	padding-right: 120px;
 }
 
@@ -807,6 +809,7 @@ li.main_nav_list:last-child {
 
 .main_area {
 	font-size: 0px;
+	margin: 0 0 60px 0;
 }
 
 /*Начало стилей левой части страницы*/
@@ -866,8 +869,7 @@ li.main_nav_list:last-child {
 .side_right {
 	display: inline-block;
 	width: 760px;
-	margin: 0 0 60px 0;
-	font-size: 16px;
+	font-size: 0;
 }
 
 .models_filters {
@@ -877,7 +879,6 @@ li.main_nav_list:last-child {
 .models_filters_text {
 	display: inline-block;
 	vertical-align: top;
-	margin: 0 267px 0 0;
 	font-size: 18px;
 	line-height: 18px;
 	font-weight: 700;
@@ -888,6 +889,7 @@ li.main_nav_list:last-child {
 .models_filters_options {
 	display: inline-block;
 	vertical-align: top;
+	float: right;
 }
 
 .models_filter_options_list {
@@ -896,6 +898,19 @@ li.main_nav_list:last-child {
 
 .models_filters_options_list li {
 	display: inline;
+	margin: 0 26px 0 0;
+}
+
+.models_filters_options_list li:nth-child(3) {
+	margin: 0 50px 0 0;
+}
+
+.models_filters_options_list li:nth-child(4) {
+	margin: 0 20px 0 0;
+}
+
+.models_filters_options_list li:last-child {
+	margin: 0 0 0 0;
 }
 
 .models_filters_options_buttons {
@@ -904,7 +919,6 @@ li.main_nav_list:last-child {
 	font-size: 14px;
 	line-height: 18px;
 	color: #000000;
-	margin: 0 16px 0 0;
 }
 
 .models {
@@ -914,11 +928,54 @@ li.main_nav_list:last-child {
 .models_cards {
 	display: inline-block;
 	vertical-align: top;
-	margin: 0 30px 0 0;
+	margin: 0 40px 36px 0;
 }
 
 .models_cards:nth-child(even) {
 	margin: 0 0 0 0;
+}
+
+.models_cards:nth-child(5) {
+	margin: 0 40px 0 0;
+}
+
+.models_cards_browser {
+	width: 360px;
+	height: 41px;
+	background-color: #e9e9e9;
+	border-radius: 5px 5px 0 0;
+	position: relative;
+}
+
+.browser_container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	top: calc(50% - 7px);
+	left: 16px;
+}
+
+.browser_points {
+	margin: 0 9px 0 0;
+	background-color: #ffffff;
+	
+	width: 14px;
+	height: 14px;
+
+	border-radius: 50%;
+}
+
+.browser_points:last-child {
+	margin: 0 0 0 0;
+} 
+
+.slider_points:last-child {
+	margin: 0 0 0 0;
+}
+
+.models_cards_model {
+	border: 1px solid #e5e5e5;
 }
 
 
@@ -941,7 +998,72 @@ li.main_nav_list:last-child {
 
 .pagination li {
 	display: inline;
-	list-style-type: none;
+}
+
+.pagination_button_link_active {
+	width:50px;
+	height: 50px;
+	display: inline-block;
+	vertical-align: middle;
+
+	margin: 0 11px 0 0;
+
+	font-weight: 500;
+	font-size: 16px;
+	vertical-align: top;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000000;
+	text-align: center;
+	padding-top: 10px;
+	
+	border: 3px solid #dbdbdb;
+	border-radius: 3px;
+	cursor: pointer;
+
+
+}
+
+.pagination_button_link {
+	width:50px;
+	height: 50px;
+	display: inline-block;
+
+	margin: 0 11px 0 0;
+
+	font-weight: 500;
+	font-size: 16px;
+	vertical-align: top;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000000;
+	text-align: center;
+	padding-top: 13px;
+	
+	background-color: #eeeeee;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.pagination_button_link_next {
+	width: 260px;
+	height: 50px;
+	display: inline-block;
+
+	margin: 0 0 0 0;
+
+	font-weight: 500;
+	font-size: 16px;
+	vertical-align: top;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000000;
+	text-align: center;
+	padding-top: 13px;
+	
+	background-color: #eeeeee;
+	border-radius: 3px;
+	cursor: pointer;
 }
 
 
