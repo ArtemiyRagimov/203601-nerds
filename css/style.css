@@ -901,7 +901,7 @@ li.main_nav_list:last-child {
 
 .max_price {
   text-align: right;
-  	line-height: 22px;
+  line-height: 22px;
 	text-transform: uppercase;
 	color: #283136;
 }
@@ -909,6 +909,7 @@ li.main_nav_list:last-child {
 .price_controls input {
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
+  line-height: 22px;
   width: 80px;
   margin-left: 10px;
   padding: 8px 10px;
@@ -928,12 +929,76 @@ li.main_nav_list:last-child {
 
 .radio {
 	margin: 0 0 52px 0;
+	font-size: 16px;
+	line-height: 22px;
 }
 
-.radio input, 
-.checkbox input {
-	display: list-item;
+.radio_button {
+  position: relative;
+  cursor: pointer;
+  padding: 0 0 0 36px;
+  margin: 0 0 15px 0;
+  display: list-item;
+	list-style-type: none;
+	color: #283136;
 }
+
+.radio_button input[type="radio"] {
+  display: none;
+}
+
+.radio_indicator {
+  position: absolute;
+  top: 0;
+  left: 1px;
+
+  width: 24px;
+  height: 24px;
+
+  border: 3px solid #b8b8b8;
+  border-radius: 50%;
+  margin: 0 0 0 0;
+}
+
+.radio_button:hover {
+	color: #000;
+}
+
+.radio_button:hover .radio_indicator {
+  border: 3px solid #000;
+}
+
+.radio_button:active .radio_indicator {
+  border: 3px solid #ededed;
+}
+
+.radio_button:active {
+  color: rgba(40, 49, 54, 0.3);
+}
+
+.radio_button input[type="radio"]:checked + .radio_indicator:before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 4px;
+ 
+  width: 10px;
+  height: 10px;
+
+	border-radius: 50%;
+  background-color: #b8b8b8;
+}
+
+.radio_button input[type="radio"]:checked:hover + .radio_indicator:before {
+  background-color: #000;
+}
+
+.radio_button input[type="radio"]:checked:active + .radio_indicator:before {
+  background-color: #ededed;
+}
+
+
+/*Начало стилей чекбоксов*/
 
 .filter_text_special {
 	margin: 0 0 22px 0;
@@ -941,6 +1006,26 @@ li.main_nav_list:last-child {
 
 .checkbox {
 	margin: 0 0 49px 0;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.checkbox_button {
+	display: list-item;
+	list-style-type: none;
+	position: relative;
+  cursor: pointer;
+  padding: 0 0 0 36px;
+  margin: 0 0 15px 0;
+	color: #283136;
+}
+
+.checkbox_button input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox_button: before {
+
 }
 
 
@@ -1044,10 +1129,6 @@ li.main_nav_list:last-child {
 .browser_points:last-child {
 	margin: 0 0 0 0;
 } 
-
-.slider_points:last-child {
-	margin: 0 0 0 0;
-}
 
 .models_cards_model {
 	border: 1px solid #e5e5e5;
