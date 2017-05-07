@@ -1144,8 +1144,10 @@ li.main_nav_list:last-child {
 	font-size: 0;
 }
 
+/*Этот маргин не по гайду. В гайде он — 57px. НА самой странице к этому маргину 
+ещё откуда-то ≈10px прибавляются. Откуда — хз. Font-size я обнулил.*/
 .models_filters {
-	margin: 0 0 57px 0;
+	margin: 0 0 51px 0;
 }
 
 .models_filters_text {
@@ -1158,13 +1160,12 @@ li.main_nav_list:last-child {
 	text-transform: uppercase;
 }
 
-/*Не могу понять, почему высота этого элемента отображается в инспекторе как 25 пикселей*/
 .models_filters_list {
 	float: right;
 }
 
 .models_filters_list li {
-	display: inline;
+	display: inline-block;
 	margin: 0 26px 0 0;
 }
 
@@ -1186,6 +1187,39 @@ li.main_nav_list:last-child {
 	font-size: 14px;
 	line-height: 18px;
 	color: #000000;
+	opacity: 0.3;
+	vertical-align: middle;
+}
+
+/*Кажется, я намудрил с треугольниками, нужна помощь.*/
+.models_filters_triangle_up {
+	display: inline-block;
+	border-left: 4.5px solid transparent;
+	border-right: 4.5px solid transparent;
+	border-bottom: 9px solid rgba(0, 0, 0, 0.3);
+	padding: 0 0 0 0;
+	vertical-align: middle;
+}
+
+.models_filters_triangle_down {
+	display: inline-block;
+	border-left: 4.5px solid transparent;
+	border-right: 4.5px solid transparent;
+	border-top: 9px solid rgba(0, 0, 0, 0.3);
+	padding: 0 0 0 0;
+	vertical-align: middle;
+}
+
+.models_filters_buttons:hover,
+.models_filters_triangle_up:hover,
+.models_filters_triangle_down:hover {
+	opacity: 0.6;
+}
+
+.models_filters_buttons:focus,
+.models_filters_triangle_up:focus,
+.models_filters_triangle_down:focus {
+	opacity: 1;
 }
 
 .models {
@@ -1196,6 +1230,20 @@ li.main_nav_list:last-child {
 	display: inline-block;
 	vertical-align: top;
 	margin: 0 40px 36px 0;
+	max-height: 615px;
+	position: relative;
+}
+
+.models_cards:hover {
+	box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.25);
+}
+
+.models_cards:hover .models_cards_browser {
+	background-color: #4d4d4d;
+}
+
+.models_cards:hover .models_cards_model {
+	border-top: 1px solid #4d4d4d;
 }
 
 .models_cards:nth-child(even) {
@@ -1247,11 +1295,16 @@ li.main_nav_list:last-child {
 .models_cards_more {
 	position: absolute;
 	width: 360px;
+	height: 200px;
 	background-color: #eeeeee;
+	top: calc(100% - 200px);
 }
 
 .models_cards_more_none {
 	display: none;
+	position: absolute;
+	width: 360px;
+	background-color: #eeeeee;
 }
 
 .pagination {
