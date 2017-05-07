@@ -45,7 +45,7 @@ body {
 }
 
 .main_nav ul {
-	list-style: none;
+	list-style-type: none;
 }
 
 li.main_nav_list:last-child {
@@ -418,7 +418,7 @@ li.main_nav_list:last-child {
 }
 
 .about_left_list {
-	list-style: none;
+	list-style-type: none;
 }
 
 .about_left_list_text {
@@ -713,7 +713,7 @@ li.main_nav_list:last-child {
 }
 
 .social_buttons ul {
-	list-style: none;
+	list-style-type: none;
 	margin: 0 139px 0 0;
 }
 
@@ -819,28 +819,108 @@ li.main_nav_list:last-child {
 	vertical-align: top;
 	width: 260px;
 	margin: 0 140px 0 0;
-	font-size: 16px;
 }
 
 .filter_text {
 	font-size: 18px;
-	line-height: 30px;
+	line-height: 18px;
 	font-weight: 700;
 	color: #000000;
 	text-transform: uppercase;
 }
 
 .filter_text_price {
-	margin: 0 0 56px 0;
+	margin: 0 0 57px 0;
 }
 
-.range {
-	margin: 0 0 15px 0;
+
+/*Начало стилей ползунка*/
+
+.range_filter {
+  width: 260px;
+  margin: 0 0 62px 0;
 }
 
-.from_to {
-	margin: 0 0 62px 0;
+.range_controls {
+  position: relative;
+  height: 41px;
+  padding: 42px 20px 38px 20px;
+  margin: 0 0 15px 0;
+  border-radius: 5px;
+  background: #f1f1f1;
 }
+
+.scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.toggle {
+  position: absolute;
+  box-sizing: initial;
+  width: 4px;
+  height: 4px;
+  top: calc(50% - 8px);
+  left: 0px;
+  cursor: pointer;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  background: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.toggle_min {
+  left: 20px;
+}
+
+.toggle_max {
+  left: 160px;
+}
+
+.price_controls {
+  font-size: 0;
+}
+
+.price_controls label {
+  font-size: 16px;
+  display: inline-block;
+  width: 50%;
+}
+
+.min_price {
+	line-height: 22px;
+	text-transform: uppercase;
+	color: #283136;
+}
+
+.max_price {
+  text-align: right;
+  	line-height: 22px;
+	text-transform: uppercase;
+	color: #283136;
+}
+
+.price_controls input {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  width: 80px;
+  margin-left: 10px;
+  padding: 8px 10px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+
+/*Начало стилей радиокнопки*/
 
 .filter_text_grid {
 	margin: 0 0 22px 0;
@@ -873,7 +953,7 @@ li.main_nav_list:last-child {
 }
 
 .models_filters {
-	margin: 0 0 55px 0;
+	margin: 0 0 57px 0;
 }
 
 .models_filters_text {
@@ -886,34 +966,29 @@ li.main_nav_list:last-child {
 	text-transform: uppercase;
 }
 
-.models_filters_options {
-	display: inline-block;
-	vertical-align: top;
+/*Не могу понять, почему высота этого элемента отображается в инспекторе как 25 пикселей*/
+.models_filters_list {
 	float: right;
 }
 
-.models_filter_options_list {
-	list-style-type: none;
-}
-
-.models_filters_options_list li {
+.models_filters_list li {
 	display: inline;
 	margin: 0 26px 0 0;
 }
 
-.models_filters_options_list li:nth-child(3) {
+.models_filters_list li:nth-child(3) {
 	margin: 0 50px 0 0;
 }
 
-.models_filters_options_list li:nth-child(4) {
+.models_filters_list li:nth-child(4) {
 	margin: 0 20px 0 0;
 }
 
-.models_filters_options_list li:last-child {
+.models_filters_list li:last-child {
 	margin: 0 0 0 0;
 }
 
-.models_filters_options_buttons {
+.models_filters_buttons {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 14px;

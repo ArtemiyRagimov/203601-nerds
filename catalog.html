@@ -58,63 +58,61 @@
 
 					<div class="side_left">
 
-						<section class="filter">
+						<form action="#" method="get">
 
 							<p class="filter_text filter_text_price">Стоимость:</p>
 							
-							<div class="range">
-								ПОЛЗУНОК
-							</div>	
-							
-							<div class="from_to">
-								<form action="#" method="get">
-									<label for="price_from">От</label>
-									<input type="text" id="price_from" name="price_text_from" value="0">
-									
-									<label for="price_to">До</label>
-									<input type="text" id="price_to" name="price_text_to" value="15000">
-								</form>
-							</div>
+							<div class="range_filter">
+
+				        <div class="range_controls">
+				          <div class="scale">
+				            <div class="bar"></div>
+				          </div>
+				          <div class="toggle toggle_min"></div>
+				          <div class="toggle toggle_max"></div>
+				        </div>
+
+				        <div class="price_controls">
+				          <label class="min_price">от <input name="min_price" type="text" value="0"></label>
+				          <label class="max_price">до <input name="max_price" type="text" value="15000"></label>
+				        </div>
+
+				      </div>
 
 							<p class="filter_text filter_text_grid">Сетка:</p>
 							
 							<div class="radio">
-								<form action="#" method="get">
-									<input type="radio" id="adaptive" name="grid" value="Адаптивная" checked>
-									<label for="adaptive">Адаптивная</label>
-									
-									<input type="radio" id="fixed" name="grid" value="Фиксированная">
-									<label for="fixed">Фиксированная</label>
-									
-									<input type="radio" id="rubber" name="grid" value="Резиновая">
-									<label for="rubber">Резиновая</label>
-								</form>
+
+ 								<input type="radio" id="adaptive" name="grid" value="Адаптивная" checked>
+								<label for="adaptive">Адаптивная</label>
+								
+								<input type="radio" id="fixed" name="grid" value="Фиксированная">
+								<label for="fixed">Фиксированная</label>
+								
+								<input type="radio" id="rubber" name="grid" value="Резиновая">
+								<label for="rubber">Резиновая</label>
 							</div>
 
 							<p class="filter_text filter_text_special">Особенности:</p>
 
 							<div class="checkbox">
-								<form action="#" method="get">
-									<input type="checkbox" id="slider" name="feature_one" value="Слайдер" checked>
-									<label for="slider">Слайдер</label>
+								<input type="checkbox" id="slider" name="feature_one" value="Слайдер" checked>
+								<label for="slider">Слайдер</label>
 
-									<input type="checkbox" id="advantages" name="feature_two" value="Блок преимуществ">
-									<label for="advantages">Блок преимуществ</label>
+								<input type="checkbox" id="advantages" name="feature_two" value="Блок преимуществ">
+								<label for="advantages">Блок преимуществ</label>
 
-									<input type="checkbox" id="news" name="feature_three" value="Новости" checked>
-									<label for="news">Новости</label>
+								<input type="checkbox" id="news" name="feature_three" value="Новости" checked>
+								<label for="news">Новости</label>
 
-									<input type="checkbox" id="gallery" name="feature_four" value="Галерея">
-									<label for="gallery">Галерея</label>
+								<input type="checkbox" id="gallery" name="feature_four" value="Галерея">
+								<label for="gallery">Галерея</label>
 
-									<input type="checkbox" id="basket" name="feature_five" value="Корзина">
-									<label for="basket"></label>
-								</form>
+								<input type="checkbox" id="basket" name="feature_five" value="Корзина">
+								<label for="basket"></label>
 							</div>
 
-							<button class="filter_button" type="submit">Показать</button>
-						
-						</section>
+						</form>
 
 					</div>
 
@@ -123,16 +121,14 @@
 						<section class="models_filters">
 						
 							<p class="models_filters_text">Сортировать:</p>
-
-							<div class="models_filters_options">					
-								<ul class="models_filters_options_list">
-									<li><a href="#" class="models_filters_options_buttons">По цене</a></li>
-									<li><a href="#" class="models_filters_options_buttons">По типу</a></li>
-									<li><a href="#" class="models_filters_options_buttons">По названию</a></li>
-									<li><a href="#" class="models_filters_options_buttons">1</a></li>
-									<li><a href="#" class="models_filters_options_buttons">1</a></li>
-								</ul>
-							</div>
+			
+							<ul class="models_filters_list">
+									<li><a href="#" class="models_filters_buttons">По цене</a></li>
+									<li><a href="#" class="models_filters_buttons">По типу</a></li>
+									<li><a href="#" class="models_filters_buttons">По названию</a></li>
+									<li><a href="#" class="models_filters_buttons">1</a></li>
+									<li><a href="#" class="models_filters_buttons">1</a></li>
+							</ul>
 
 						</section>
 						
