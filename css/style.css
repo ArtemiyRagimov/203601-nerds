@@ -151,7 +151,7 @@ li.main_nav_list:last-child {
 .slider_screen_text {
 	color: #283136;
 	font-size: 16px;
-	font-weight: 400;
+	font-weight: 00;
 	line-height: 24px;
 	margin: 0 0 38px 0;
 }
@@ -160,7 +160,7 @@ li.main_nav_list:last-child {
 	display: inline-block;
 	padding: 17px 55px;
 
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 16px;
 	line-height: 18px;
 	font-family: Roboto, Arial, sans-serif;
@@ -943,6 +943,10 @@ li.main_nav_list:last-child {
 	color: #283136;
 }
 
+.radio_button:last-child {
+	margin: 0 0 0 0;
+}
+
 .radio_button input[type="radio"] {
   display: none;
 }
@@ -1005,7 +1009,6 @@ li.main_nav_list:last-child {
 }
 
 .checkbox {
-	margin: 0 0 49px 0;
 	font-size: 16px;
 	line-height: 20px;
 }
@@ -1019,6 +1022,10 @@ li.main_nav_list:last-child {
   margin: 0 0 8px 0;
 	color: #283136;
 	min-height: 27px;
+}
+
+.checkbox_button:last-child {
+	margin: 0 0 0 0;
 }
 
 .checkbox_button input[type="checkbox"] {
@@ -1079,6 +1086,55 @@ li.main_nav_list:last-child {
   opacity: 0.2;
 }
 
+.show_container {
+	position: relative;
+}
+
+.show_button {
+	display: inline-block;
+	padding: 19px 89px;
+	position: absolute;
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
+	vertical-align: top;
+	text-align: top;
+	color: #000;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin: 48px 0 0 0;
+	
+	background-color: #eeeeee;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.show_button:hover {
+	background-color: #dfdfdf;
+}
+
+.show_button:active {
+	background-color: #d5d5d5;
+	color: rgba(0, 0, 0, 0.3);
+	margin: 51px 0 0 0;
+	padding: 16px 89px 19px 89px;
+}
+
+.show_button_back {
+	position: absolute;
+	display: inline-block;
+	
+	width: 260px;
+	height: 50px;
+	margin: 48px 0 0 0;
+	
+	background-color: #bfbfbf;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
 
 /*Начало стилей правой части страницы*/
 
