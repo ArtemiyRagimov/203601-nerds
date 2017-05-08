@@ -1086,10 +1086,6 @@ li.main_nav_list:last-child {
   opacity: 0.2;
 }
 
-.show_container {
-	position: relative;
-}
-
 .show_button {
 	display: inline-block;
 	padding: 19px 89px;
@@ -1118,23 +1114,10 @@ li.main_nav_list:last-child {
 .show_button:active {
 	background-color: #d5d5d5;
 	color: rgba(0, 0, 0, 0.3);
-	margin: 51px 0 0 0;
+	border-top: 3px solid #bfbfbf;
 	padding: 16px 89px 19px 89px;
 }
 
-.show_button_back {
-	position: absolute;
-	display: inline-block;
-	
-	width: 260px;
-	height: 50px;
-	margin: 48px 0 0 0;
-	
-	background-color: #bfbfbf;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-}
 
 /*Начало стилей правой части страницы*/
 
@@ -1243,7 +1226,7 @@ li.main_nav_list:last-child {
 }
 
 .models_cards:hover .models_cards_model {
-	border-top: 1px solid #4d4d4d;
+	border: none;
 }
 
 .models_cards:nth-child(even) {
@@ -1289,22 +1272,66 @@ li.main_nav_list:last-child {
 	border: 1px solid #e5e5e5;
 }
 
-
-/*Поставил этой карточке в коде класс none. Не могу понять, как поставить 
-её поверх макета Седоны. Явно же не через позишн абсолют?*/
 .models_cards_more {
 	position: absolute;
 	width: 360px;
-	height: 200px;
+	height: 231px;
 	background-color: #eeeeee;
-	top: calc(100% - 200px);
+	top: calc(100% - 229px);
+	padding: 32px 0 44px 0;
+	display: none;
 }
 
-.models_cards_more_none {
-	display: none;
-	position: absolute;
-	width: 360px;
-	background-color: #eeeeee;
+.models_cards_more_header {
+	font-size: 18px;
+	line-height: 18px;
+	color: #000;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0 0 19px 0;
+}
+
+.models_cards_more_text {
+	font-size: 16px;
+	line-height: 18px;
+	color: #666;
+	text-align: center;
+	margin: 0 0 30px 0;
+}
+
+.models_cards_more_price {
+	display: inline-block;
+	padding: 19px 0 19px 0;
+	margin: 0 80px 0 80px;
+	width: 200px;
+	
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 16px;
+	text-align: center;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-decoration: none;
+	
+	background-color: #fb565a;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.models_cards_more_price:hover {
+	background-color: #e74246;
+}
+
+.models_cards_more_price:active {
+	background-color: #d7373b;
+	border-top: 3px solid #c13135;
+	padding: 16px 0 19px 0;
+}
+
+.models_cards:hover .models_cards_more {
+	display: block;
 }
 
 .pagination {
