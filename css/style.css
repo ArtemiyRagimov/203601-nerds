@@ -725,6 +725,208 @@ li.main_nav_list:last-child {
 	width: auto;
 	position: relative;
 	margin: 0 0 62px 0;
+	font-size: 0px;
+}
+
+.modal_content {
+  width: 960px;
+  height: 590px;
+  padding: 67px 100px;
+
+  background: #fff;
+  box-shadow: 0 16px 45px 0 rgba(0, 0, 0, 0.75);
+
+  position: absolute;
+  top: calc(50% - 350px);
+  left: calc(50% - 480px);
+  z-index: 20;
+}
+
+.modal_content_close {
+  position: absolute;
+  top: 78px;
+  right: 90px;
+
+  width: 27px;
+  height: 27px;
+
+  font-size: 0;
+
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal_content_close:before,
+.modal_content_close:after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 2px;
+
+  width: 27px;
+  height: 5px;
+  background-color: #ffcccd;
+  border-radius: 1px;
+}
+
+.modal_content_close:before {
+  transform: rotate(45deg);
+}
+
+.modal_content_close:after {
+  transform: rotate(-45deg);
+}
+
+/*Как тут навешать ховеры и эктивы?*/
+.modal_content_close:hover .modal_content_close:before,
+.modal_content_close:hover .modal_content_close:after {
+	background-color: #fb565a;
+}
+
+.modal_content_close:active .modal_conent_close:before,
+.modal_content_close:after:active {
+	background-color: #ffeeee;
+}
+
+/*Почему при нажатии на крестик появляется какая-то дурацкая рамка?*/
+.modal_content_close:active {
+	outline: none;
+	border: none;
+}
+
+.modal_content_title {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 500;
+	color: #000;
+	margin: 0 0 36px 0;
+}
+
+.login_text {
+	display: inline-block;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 700;
+	margin: 0 40px 34px 0;
+}
+
+.login_text:nth-child(2) {
+	margin: 0 0 0 0;
+}
+
+.login_field {
+	font-size: 16px;
+	line-height: 18px;
+	color: rgba(68, 68, 68, 0.5);
+	font-family: Roboto, Arial, sans-serif;
+	font-weight: 400;
+
+	padding: 12px 14px 14px 14px;
+	margin: 9px 0 0 0;
+
+	width: 360px;
+	border: 2px solid #d7dcde;
+}
+
+.login_field_letter {
+	font-size: 16px;
+	line-height: 18px;
+	color: rgba(68, 68, 68, 0.5);
+	font-family: Roboto, Arial, sans-serif;
+	font-weight: 400;
+
+	padding: 12px 14px 14px 14px;
+	margin: 9px 0 0 0;
+	
+	width: 760px;
+	border: 2px solid #d7dcde;
+	height: 114px;
+	text-align: top;
+
+	resize: none;
+}
+
+.login_field:hover,
+.login_field_letter:hover {
+	border: 2px solid #b4b9bb;
+}
+
+.login_field:focus,
+.login_field_letter:focus {
+	border: 2px solid #000;
+	outline: none;
+	color: rgb(68, 68, 68);
+}
+
+.login_field:invalid,
+.login_field_letter:invalid {
+	border: 2px solid #000;
+	color: #e74246;
+}
+
+.login_field::-webkit-input-placeholder {
+color: rgba(68, 68, 68, 0.5);
+}
+
+.login_field:-moz-placeholder {
+color: rgba(68, 68, 68, 0.5); 
+}
+
+.login_field::-moz-placeholder {
+color: rgba(68, 68, 68, 0.5); 
+}
+
+.login_field:-ms-input-placeholder { 
+color: rgba(68, 68, 68, 0.5); 
+}
+
+.login_field_letter::-webkit-input-placeholder {
+color: rgba(68, 68, 68, 0.5);
+}
+
+.login_field_letter:-moz-placeholder {
+color: rgba(68, 68, 68, 0.5); 
+}
+
+.login_field_letter::-moz-placeholder {
+color: rgba(68, 68, 68, 0.5); 
+}
+
+.login_field_letter:-ms-input-placeholder { 
+color: rgba(68, 68, 68, 0.5); 
+}
+
+.login_button {
+	display: inline-block;
+	padding: 17px 0 15px 0;
+	width: 260px;
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
+	vertical-align: top;
+	text-align: center;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-decoration: none;
+	
+	background-color: #fb565a;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.login_button:hover {
+	background-color: #e74246;
+}
+
+/*Что за странная тень появляется вокруг кнопки, когда её зажимешь? 
+Не вижу её в стилях*/
+.login_button:active {
+	background-color: #d7373b;
+	color: rgba(255, 255, 255, 0.3);
+	box-shadow: none;
 }
 
 .contacts_info  {
