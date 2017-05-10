@@ -10,6 +10,7 @@ body {
 	color: #283136;
 	font-family: Roboto, Arial, sans-serif;
 	font-weight: 400;
+	min-width: 1200px;
 }
 
 .container {
@@ -267,6 +268,7 @@ li.main_nav_list:last-child {
 .slider_screen_button {
 	display: inline-block;
 	padding: 17px 55px;
+	margin: 0 0 79px 0;
 
 	font-weight: 500;
 	font-size: 16px;
@@ -323,7 +325,7 @@ li.main_nav_list:last-child {
 	justify-content: space-between;
 	align-items: center;
 	position: absolute;
-	top: 72%;
+	bottom: 96px;
 	left: calc(50% - 44px);
 }
 
@@ -581,10 +583,8 @@ li.main_nav_list:last-child {
 	display: inline-block;
 	vertical-align: top;
 	width: 120px;
-	padding-right: 120px;
 }
 
-/*Как правильно поднять наверх символы процентов? Я пока что в ХТМЛ <sup> прописал.*/
 .about_right_number {
 	font-size: 45px;
 	line-height: 45px;
