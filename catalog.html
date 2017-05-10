@@ -64,80 +64,80 @@
 							
 							<div class="range_filter">
 
-				        <div class="range_controls">
-				          <div class="scale">
-				            <div class="bar"></div>
-				          </div>
-				          <div class="toggle toggle_min"></div>
-				          <div class="toggle toggle_max"></div>
-				        </div>
+								<div class="range_controls">
+									<div class="scale">
+										<div class="bar"></div>
+									</div>
+									<div class="toggle toggle_min"></div>
+									<div class="toggle toggle_max"></div>
+								</div>
 
-				        <div class="price_controls">
-				          <label class="min_price">от <input name="min_price" type="text" value="0"></label>
-				          <label class="max_price">до <input name="max_price" type="text" value="15000"></label>
-				        </div>
+								<div class="price_controls">
+									<label class="min_price">от <input name="min_price" type="text" value="0"></label>
+									<label class="max_price">до <input name="max_price" type="text" value="15000"></label>
+								</div>
 
-				      </div>
+							</div>
 
 							<p class="filter_text filter_text_grid">Сетка:</p>
 							
 							<div class="radio">
 								<label class="radio_button">
-			          <input type="radio" name="grid" value="Адаптивная" checked>
-			          <span class="radio_indicator"></span>
-			          Адаптивная
-			        	</label>
+								<input type="radio" name="grid" value="Адаптивная" checked>
+								<span class="radio_indicator"></span>
+								Адаптивная
+								</label>
 
 
 								<label class="radio_button">
-			          <input type="radio" name="grid" value="Фиксированная">
-			          <span class="radio_indicator"></span>
-			          Фиксированная
-			        	</label>
+								<input type="radio" name="grid" value="Фиксированная">
+								<span class="radio_indicator"></span>
+								Фиксированная
+								</label>
 
 
 								<label class="radio_button">
-			          <input type="radio" name="grid" value="Резиновая">
-			          <span class="radio_indicator"></span>
-			          Резиновая
-			        	</label>
+								<input type="radio" name="grid" value="Резиновая">
+								<span class="radio_indicator"></span>
+								Резиновая
+								</label>
 							</div>
 
 							<p class="filter_text filter_text_special">Особенности:</p>
 
 							<div class="checkbox">
 								<label class="checkbox_button">
-			          <input type="checkbox" name="feature_one" value="Слайдер" checked>
-			          <span class="checkbox_indicator"></span>		
-			          Слайдер
-			        	</label>
-
-			        	<label class="checkbox_button">
-			          <input type="checkbox" name="feature_two" value="Блок-преимуществ">
-			          <span class="checkbox_indicator"></span>		
-			          Блок преимуществ
-			        	</label>
-
-			        	<label class="checkbox_button">
-			          <input type="checkbox" name="feature_three" value="Новости" checked>
-			          <span class="checkbox_indicator"></span>		
-			          Новости
-			        	</label>
-
-			        	<label class="checkbox_button">
-			          <input type="checkbox" name="feature_four" value="Галерея">
-			          <span class="checkbox_indicator"></span>		
-			          Галерея
-			        	</label>
+								<input type="checkbox" name="feature_one" value="Слайдер" checked>
+								<span class="checkbox_indicator"></span>		
+								Слайдер
+								</label>
 
 								<label class="checkbox_button">
-			          <input type="checkbox" name="feature_fifth" value="Корзина">
-			          <span class="checkbox_indicator"></span>		
-			          Корзина
-			        	</label>
+								<input type="checkbox" name="feature_two" value="Блок-преимуществ">
+								<span class="checkbox_indicator"></span>		
+								Блок преимуществ
+								</label>
+
+								<label class="checkbox_button">
+								<input type="checkbox" name="feature_three" value="Новости" checked>
+								<span class="checkbox_indicator"></span>		
+								Новости
+								</label>
+
+								<label class="checkbox_button">
+								<input type="checkbox" name="feature_four" value="Галерея">
+								<span class="checkbox_indicator"></span>		
+								Галерея
+								</label>
+
+								<label class="checkbox_button">
+								<input type="checkbox" name="feature_fifth" value="Корзина">
+								<span class="checkbox_indicator"></span>		
+								Корзина
+								</label>
 							</div>
 							
-							<a href="#" class="show_button">Показать</a>
+							<button type="submit" href="#" class="show_button">Показать</button>
 							
 						</form>
 
@@ -150,11 +150,11 @@
 							<p class="models_filters_text">Сортировать:</p>
 			
 							<ul class="models_filters_list">
-									<li><a href="#" class="models_filters_buttons">По цене</a></li>
+									<li><a href="#" class="models_filters_buttons_active">По цене</a></li>
 									<li><a href="#" class="models_filters_buttons">По типу</a></li>
 									<li><a href="#" class="models_filters_buttons">По названию</a></li>
-									<li><a href="#" class="models_filters_triangle_up"></a></li>
-									<li><a href="#" class="models_filters_triangle_down"></a></li>
+									<li><a href="#" class="models_filters_triangle_active"></a></li>
+									<li><a href="#" class="models_filters_triangle"></a></li>
 							</ul>
 
 						</section>
@@ -165,9 +165,9 @@
 								
 								<div class="models_cards_browser">
 									<div class="browser_container">
-										<label class="browser_points"></label>
-										<label class="browser_points"></label>
-										<label class="browser_points"></label>
+										<span class="browser_points"></span>
+										<span class="browser_points"></span>
+										<span class="browser_points"></span>
 									</div>								
 								</div>
 
@@ -175,16 +175,16 @@
 								<div class="models_cards_more">
 									<p class="models_cards_more_header">Sedona</p>
 									<p class="models_cards_more_text">Информационный сайт<br>для туристов</p>
-									<p class="models_cards_more_price">9900 руб.</p>
+									<a class="models_cards_more_price" href="#">9900 руб.</a>
 								</div>
 							</div>
 
 							<div class="models_cards">
 								<div class="models_cards_browser">
 									<div class="browser_container">
-										<label class="browser_points"></label>
-										<label class="browser_points"></label>
-										<label class="browser_points"></label>
+										<span class="browser_points"></span>
+										<span class="browser_points"></span>
+										<span class="browser_points"></span>
 									</div>								
 								</div>
 								<img class="models_cards_model" src="img/models_cards_pink.jpg" width="360" heigth="576" alt="Pink">
@@ -198,64 +198,64 @@
 							<div class="models_cards">
 								<div class="models_cards_browser">
 									<div class="browser_container">
-										<label class="browser_points"></label>
-										<label class="browser_points"></label>
-										<label class="browser_points"></label>
+										<span class="browser_points"></span>
+										<span class="browser_points"></span>
+										<span class="browser_points"></span>
 									</div>								
 								</div>
 								<img class="models_cards_model" src="img/models_cards_borodinskiy.jpg" width="360" heigth="576" alt="Borodinskiy">
 								<div class="models_cards_more">
 									<p class="models_cards_more_header">Borodinskiy</p>
 									<p class="models_cards_more_text">Сайт салона красоты.<br> Для мужчин, да.</p>
-									<p class="models_cards_more_price">9900 руб.</p>
+									<a class="models_cards_more_price" href="#">9900 руб.</a>
 								</div>
 							</div>
 							
 							<div class="models_cards">
 								<div class="models_cards_browser">
 									<div class="browser_container">
-										<label class="browser_points"></label>
-										<label class="browser_points"></label>
-										<label class="browser_points"></label>
+										<span class="browser_points"></span>
+										<span class="browser_points"></span>
+										<span class="browser_points"></span>
 									</div>								
 								</div>
 								<img class="models_cards_model" src="img/models_cards_mishka.jpg" width="360" heigth="576" alt="Mishka">
 								<div class="models_cards_more">
 									<p class="models_cards_more_header">Mishka</p>
 									<p class="models_cards_more_text">Интернет-магазин<br> вязаных игрушек</p>
-									<p class="models_cards_more_price">9900 руб.</p>
+									<a class="models_cards_more_price" href="#">9900 руб.</a>
 								</div>
 							</div>
 
 							<div class="models_cards">
 								<div class="models_cards_browser">
 									<div class="browser_container">
-										<label class="browser_points"></label>
-										<label class="browser_points"></label>
-										<label class="browser_points"></label>
+										<span class="browser_points"></span>
+										<span class="browser_points"></span>
+										<span class="browser_points"></span>
 									</div>								
 								</div>
 								<img class="models_cards_model" src="img/models_cards_aplus.jpg" width="360" heigth="576" alt="APlus">
 								<div class="models_cards_more">
 									<p class="models_cards_more_header">A Plus</p>
 									<p class="models_cards_more_text">Лендинг курсов повышения<br> квалификации</p>
-									<p class="models_cards_more_price">9900 руб.</p>
+									<a class="models_cards_more_price" href="#">9900 руб.</a>
 								</div>
 							</div>
 
 							<div class="models_cards">
 								<div class="models_cards_browser">
 									<div class="browser_container">
-										<label class="browser_points"></label>
-										<label class="browser_points"></label>
-										<label class="browser_points"></label>
+										<span class="browser_points"></span>
+										<span class="browser_points"></span>
+										<span class="browser_points"></span>
 									</div>								
 								</div>
 								<img class="models_cards_model" src="img/models_cards_kvast.jpg" width="360" heigth="576" alt="Кваст">
 								<div class="models_cards_more">
 									<p class="models_cards_more_header">Кваст</p>
 									<p class="models_cards_more_text">Промосайт производителя<br> крафтового кваса</p>
-									<p class="models_cards_more_price">9900 руб.</p>
+									<a class="models_cards_more_price" href="#">9900 руб.</a>
 								</div>
 							</div>
 
@@ -276,22 +276,22 @@
 	
 			<section class="contacts">
 
-			  <div class="modal_content">
-      		<button class="modal_content_close" type="button" title="Закрыть">Закрыть</button>
+				<div class="modal_content">
+					<button class="modal_content_close" type="button" title="Закрыть">Закрыть</button>
 
-		      <p class="modal_content_title">Напишите нам</p>
-		      
-		      <form class="login_form" action="#" method="post">
-		        <label class="login_text">Ваше имя:<br><input class="login_field" type="text" name="login" placeholder="Представьтесь, пожалуйста"></label>
-		        
-		        <label class="login_text">Ваш e-mail:<br><input class="login_field" type="text" name="email" placeholder="Для отправки ответа"></label>
-
-		        <label class="login_text">Текст письма:<br><textarea class="login_field_letter" type="text" name="letter" placeholder="В свободной форме"></textarea></label>
-
-		        <button class="login_button" type="submit">Отправить</button>
-		      </form>
+					<p class="modal_content_title">Напишите нам</p>
 					
-    		</div>
+					<form class="login_form" action="#" method="post">
+						<label class="login_text">Ваше имя:<br><input class="login_field" type="text" name="login" placeholder="Представьтесь, пожалуйста"></label>
+						
+						<label class="login_text">Ваш e-mail:<br><input class="login_field" type="text" name="email" placeholder="Для отправки ответа"></label>
+
+						<label class="login_text">Текст письма:<br><textarea class="login_field_letter" type="text" name="letter" placeholder="В свободной форме"></textarea></label>
+
+						<button class="login_button" type="submit">Отправить</button>
+					</form>
+					
+				</div>
 
 				<div class="contacts_info container">
 					<p class="contacts_info_header">Nёrds design studio</p>
