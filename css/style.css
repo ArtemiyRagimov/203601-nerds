@@ -1535,6 +1535,7 @@ color: rgba(68, 68, 68, 0.5);
 .models {
 	margin-bottom: 60px;
 	font-size: 0;
+	line-height: 0;
 }
 
 .models_cards {
@@ -1546,9 +1547,9 @@ color: rgba(68, 68, 68, 0.5);
 	overflow: hidden;
 }
 
-/*.models_cards:hover {
+.models_cards:hover {
 	box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.25);
-}*/
+}
 
 .models_cards:hover .models_cards_browser {
 	background-color: #4d4d4d;
@@ -1603,7 +1604,7 @@ color: rgba(68, 68, 68, 0.5);
 	height: auto;
 	width: 360px;
 	background-color: #eeeeee;
-	bottom: 0;
+	bottom: 0px;
 	padding: 32px 20px 44px 20px;
 	margin: 0 0 0 0;
 	display: none;
