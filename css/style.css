@@ -224,10 +224,8 @@ li.main_nav_list:last-child {
 .slider {
 	background-color: #eeeeee;
 	margin: 0 0 80px 0;
-	min-height: 418px;
 	font-size: 0px;
 	position: relative;
-	padding: 7px 0 0 0;
 }
 
 .slider_screen_one {
@@ -294,29 +292,23 @@ li.main_nav_list:last-child {
 	color: rgba(255, 255, 255, 0.3);
 }
 
-.slider_image_one,
-.slider_image_two,
-.slider_image_three {
-	display: inline-block;
-	vertical-align: top;
-	position: absolute;
-	bottom: 0;
+.slide_one {
+	padding: 7px 0 0 0;
+	background: #eee url("../img/index_slide_one.png") no-repeat 431px 4px;
 }
 
-.slider_image_one {
-	right: calc(50% - 549px);
+.slide_two {
+	padding: 7px 0 0 0;
+	background: #eee url("../img/index_slide_two.png") no-repeat 498px -13px;
 }
 
-.slider_image_two {
-	right: calc(50% - 580px);
-}
-
-.slider_image_three {
-	right: calc(50% - 580px);
-}
-
-.slide_two,
 .slide_three {
+	padding: 7px 0 0 0;
+	background: #eee url("../img/index_slide_three.png") no-repeat 402px 4px;
+}
+
+.slide_one,
+.slide_two {
 	display: none;
 }
 
@@ -1404,7 +1396,6 @@ color: rgba(68, 68, 68, 0.5);
 .show_button {
 	display: inline-block;
 	padding: 19px 89px;
-	position: absolute;
 
 	font-weight: 500;
 	font-family: Roboto, Arial, sans-serif;
@@ -1533,12 +1524,13 @@ color: rgba(68, 68, 68, 0.5);
 
 .models {
 	margin-bottom: 60px;
+	font-size: 0;
 }
 
 .models_cards {
 	display: inline-block;
 	vertical-align: top;
-	/*max-height: 615px;*/
+	min-height: 615px;
 	margin: 0 40px 36px 0;
 	position: relative;
 	overflow: hidden;
@@ -1560,10 +1552,6 @@ color: rgba(68, 68, 68, 0.5);
 	margin: 0 0 0 0;
 }
 
-.models_cards:nth-child(5) {
-	margin: 0 40px 0 0;
-}
-
 .models_cards_browser {
 	width: 360px;
 	height: 41px;
@@ -1576,7 +1564,8 @@ color: rgba(68, 68, 68, 0.5);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	position: absolute;
+	position: relative;
+	width: 60px;
 	top: calc(50% - 7px);
 	left: 16px;
 }
@@ -1601,10 +1590,12 @@ color: rgba(68, 68, 68, 0.5);
 
 .models_cards_more {
 	position: absolute;
+	height: auto;
 	width: 360px;
 	background-color: #eeeeee;
 	bottom: 0;
 	padding: 32px 0 44px 0;
+	margin: 0 0 0 0;
 	display: none;
 }
 
@@ -1754,49 +1745,3 @@ color: rgba(68, 68, 68, 0.5);
 	border-top: 3px solid #bfbfbf;
 	padding-top: 10px;
 }
-
-
-/*Начало стилей для спрайтов
-
-/*.sprite {
-		background-image: url("img/sprite.png");
-		background-repeat: no-repeat;
-		display: block;
-}
-
-.sprite-cart {
-		width: 15px;
-		height: 15px;
-		background-position: -10px -10px;
-}
-
-.sprite-checkbox_off {
-		width: 23px;
-		height: 23px;
-		background-position: -10px -45px;
-}
-
-.sprite-checkbox_on {
-		width: 27px;
-		height: 23px;
-		background-position: -10px -88px;
-}
-
-.sprite-social_button_fb {
-		width: 12px;
-		height: 22px;
-		background-position: -10px -131px;
-}
-
-.sprite-social_button_inst {
-		width: 21px;
-		height: 21px;
-		background-position: -10px -173px;
-}
-
-.sprite-social_button_vk {
-		width: 26px;
-		height: 15px;
-		background-position: -10px -214px;
-}
-*/
