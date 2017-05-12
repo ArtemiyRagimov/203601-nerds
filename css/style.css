@@ -332,6 +332,7 @@ li.main_nav_list:last-child {
 
 	border-radius: 50%;
 	cursor: pointer;
+	display: inline-block;
 }
 
 .slider_points:last-child {
@@ -1102,8 +1103,8 @@ color: rgba(68, 68, 68, 0.5);
 
 .main_header_bg {
 	background-color: #eeeeee;
-	padding: 65px 0 110px 0;
-	margin: 0 0 62px 0;
+	padding: 77px 0 110px 0;
+	margin: 0 0 58px 0;
 }
 
 .catalog_header {
@@ -1138,7 +1139,7 @@ color: rgba(68, 68, 68, 0.5);
 }
 
 .filter_text_price {
-	margin: 0 0 51px 0;
+	margin: 0 0 55px 0;
 }
 
 
@@ -1232,7 +1233,7 @@ color: rgba(68, 68, 68, 0.5);
 /*Начало стилей радиокнопки*/
 
 .filter_text_grid {
-	margin: 0 0 21px 0;
+	margin: 0 0 20px 0;
 }
 
 .radio {
@@ -1437,10 +1438,8 @@ color: rgba(68, 68, 68, 0.5);
 	font-size: 0;
 }
 
-/*Этот маргин не по гайду. В гайде он — 57px. НА самой странице к этому маргину 
-ещё откуда-то ≈10px прибавляются. Откуда — хз. Font-size я обнулил.*/
 .models_filters {
-	margin: 0 0 48px 0;
+	margin: 0 0 50px 0;
 }
 
 .models_filters_text {
@@ -1533,7 +1532,7 @@ color: rgba(68, 68, 68, 0.5);
 }
 
 .models {
-	margin-bottom: 60px;
+	margin-bottom: 17px;
 	font-size: 0;
 	line-height: 0;
 }
