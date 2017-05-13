@@ -19,9 +19,6 @@ body {
 	margin: 0 auto;
 }
 
-
-
-
 /*Начало стилей шапки*/
 
 .main_header {
@@ -46,7 +43,6 @@ body {
 	vertical-align: top;
 	margin: 25px 0 0 0;
 }
-
 
 .main_nav ul {
 	list-style-type: none;
@@ -76,12 +72,10 @@ li.main_nav_list:last-child {
 .main_nav_list_active {
 	display: inline-block;
 	vertical-align: top;
-
 	text-transform: uppercase;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 30px;
-
 	margin: 0 45px 0 0;
 	position: relative;
 
@@ -90,13 +84,11 @@ li.main_nav_list:last-child {
 .main_nav_list_active:after {
 	content: "";
 	position: absolute;
-
 	width: 100%;
 	height: 2px;
 	bottom: -7px;
 	left: 0;
 	right: 0;
-
 	background-color: #fb565a;
 }
 
@@ -146,16 +138,12 @@ li.main_nav_list:last-child {
 .cart_link::before {
 	content: "";
 	position: absolute;
-
 	left: 1px;
 	top: 8px;
-
 	width: 15px;
 	height: 15px;
-
 	background: url("../img/sprite.png") no-repeat;
 	background-position: -40px -40px;
-
 	opacity: 0.3;
 }
 
@@ -185,29 +173,23 @@ li.main_nav_list:last-child {
 .cart_link_active:after {
 	content: "";
 	position: absolute;
-
 	width: 100%;
 	height: 2px;
 	bottom: -1px;
 	left: 0;
-	right: 0;
-	
+	right: 0;	
 	background-color: #fb565a;
 }
 
 .cart_link_active:before {
 	content: "";
 	position: absolute;
-
 	left: 1px;
 	top: 8px;
-
 	width: 15px;
 	height: 15px;
-
 	background: url("../img/sprite.png") no-repeat;
 	background-position: -40px -40px;
-
 	opacity: 0.3;
 }
 
@@ -218,8 +200,6 @@ li.main_nav_list:last-child {
 .cart_link a:active {
 	color: #000;
 }
-
-
 
 /*Начало стилей слайдера*/
 
@@ -256,20 +236,20 @@ li.main_nav_list:last-child {
 	font-size: 55px;
 	font-weight: 500;
 	line-height: 55px;
-	margin: 0 0 25px 0;
+	margin: 0 0 28px 0;
 }
 
 .slider_screen_text {
 	color: #283136;
 	font-size: 16px;
 	margin: 0 0 38px 0;
+	width: 420px;
 }
 
 .slider_screen_button {
 	display: inline-block;
 	padding: 17px 55px;
 	margin: 0 0 79px 0;
-
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 18px;
@@ -278,7 +258,6 @@ li.main_nav_list:last-child {
 	color: #ffffff;
 	text-transform: uppercase;
 	text-decoration: none;
-	
 	background-color: #fb565a;
 	border: none;
 	border-radius: 4px;
@@ -325,11 +304,9 @@ li.main_nav_list:last-child {
 
 .slider_points {
 	margin: 0 17px 0 0;
-	background-color: #ffffff;
-	
+	background-color: #ffffff;	
 	width: 18px;
 	height: 18px;
-
 	border-radius: 50%;
 	cursor: pointer;
 	display: inline-block;
@@ -346,17 +323,13 @@ li.main_nav_list:last-child {
 .slider_points_active:before {
 	content: "";
 	position: absolute;
-
 	left: calc(50% - 4px);
 	top: calc(50% - 4px);
-
 	width: 4px;
 	height: 4px;
-
 	border: 2px solid #c2c2c2;
 	border-radius: 50%;
 }
-
 
 /*Начало стилей блока услуг*/
 
@@ -400,18 +373,17 @@ li.main_nav_list:last-child {
 	font-weight: 700;
 	color: #000000;
 	text-transform: uppercase;
-	margin: 0 0 17px 0px;
+	margin: 0 0 15px 0;
 }
 
 .features_item_text {
 	color: #283136;
-	margin: 0 0 33px 0;
+	margin: 0 0 32px 0;
 }
 
 .features_item_button_one {
 	display: inline-block;
 	padding: 16px 40px;
-
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 18px;
@@ -419,8 +391,7 @@ li.main_nav_list:last-child {
 	text-align: center;
 	color: #ffffff;
 	text-transform: uppercase;
-	text-decoration: none;
-	
+	text-decoration: none;	
 	background-color: #fb565a;
 	border: none;
 	border-radius: 4px;
@@ -439,7 +410,6 @@ li.main_nav_list:last-child {
 .features_item_button_two {
 	display: inline-block;
 	padding: 16px 40px;
-
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 18px;
@@ -448,7 +418,6 @@ li.main_nav_list:last-child {
 	color: #ffffff;
 	text-transform: uppercase;
 	text-decoration: none;
-	
 	background-color: #00ca74;
 	border: none;
 	border-radius: 4px;
@@ -467,7 +436,6 @@ li.main_nav_list:last-child {
 .features_item_button_three {
 	display: inline-block;
 	padding: 16px 40px;
-
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 18px;
@@ -475,8 +443,7 @@ li.main_nav_list:last-child {
 	text-align: center;
 	color: #ffffff;
 	text-transform: uppercase;
-	text-decoration: none;
-	
+	text-decoration: none;	
 	background-color: #efc84a;
 	border: none;
 	border-radius: 4px;
@@ -542,17 +509,13 @@ li.main_nav_list:last-child {
 	margin: 0 0 0 0;
 }
 
-
 .about_left_list_text:before {
 	content: "";
 	position: absolute;
-
 	left: 1px;
 	top: 11px;
-
 	width: 25px;
 	height: 2px;
-
 	background-color: #fb565a;
 }
 
@@ -563,9 +526,8 @@ li.main_nav_list:last-child {
 }
 
 .about_right_logo {
-	margin: 0 0 24px 0;
+	margin: 0 0 23px 0;
 }
-
 
 .about_right_subtitle {
 	font-size: 16px;
@@ -586,12 +548,12 @@ li.main_nav_list:last-child {
 	line-height: 45px;
 	color: #000000;
 	font-weight: 700;
-	margin: 0 0 19px 0;
+	margin: 0 0 18px 0;
 }
 
 .about_right_number sup {
 	top: -14px;
-	font-size: 27px;
+	font-size: 26px;
 }
 
 .about_right_text {
@@ -600,20 +562,20 @@ li.main_nav_list:last-child {
 	color: #283136;
 }
 
-
 /*Начало стилей блока с логотипами клиентов*/
 
 .clients {
 	font-size: 0px;
+	line-height: 0;
 	min-height: 180px;
-	margin: 0 0 62px 0;
+	margin: 0 0 81px 0;
 	border-top: 2px solid #eeeeee;
 	border-bottom: 2px solid #eeeeee;
 }
 
 .clients_list {
 	list-style-type: none;
-	padding: 48px 0;
+	padding: 48px 0 40px 0;
 }
 
 .clients_list_logo {
@@ -629,13 +591,10 @@ li.main_nav_list:last-child {
 .clients_list_logo_academy:after {
 	content:"";
 	position: absolute;
-
 	left: 280px;
 	top: calc(50% - 60px);
-
 	width: 2px;
 	height: 52px;
-
 	background-color: #eeeeee;
 }
 
@@ -659,13 +618,10 @@ li.main_nav_list:last-child {
 .clients_list_logo_barbershop:after {
 	content:"";
 	position: absolute;
-
 	left: 253px;
 	top: calc(50% - 75px);
-
 	width: 2px;
 	height: 52px;
-
 	background-color: #eeeeee;
 }
 
@@ -689,13 +645,10 @@ li.main_nav_list:last-child {
 .clients_list_logo_pink:after {
 	content:"";
 	position: absolute;
-
 	left: 242px;
 	top: calc(50% - 56px);
-
 	width: 2px;
 	height: 52px;
-
 	background-color: #eeeeee;
 }
 
@@ -723,7 +676,6 @@ li.main_nav_list:last-child {
 	opacity: 0.1;
 }
 
-
 /*Начало стилей блока с контактами и картой*/
 
 .contacts {
@@ -737,14 +689,15 @@ li.main_nav_list:last-child {
 	width: 960px;
 	height: 590px;
 	padding: 69px 100px;
-
 	background: #fff;
 	box-shadow: 0 16px 45px 0 rgba(0, 0, 0, 0.75);
-
-	position: absolute;
-	top: calc(50% - 350px);
-	left: calc(50% - 480px);
+	position: fixed;
 	z-index: 2;
+	top: 0; 
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
 	display: none;
 }
 
@@ -752,12 +705,9 @@ li.main_nav_list:last-child {
 	position: absolute;
 	top: 78px;
 	right: 90px;
-
 	width: 27px;
 	height: 27px;
-
 	font-size: 0;
-
 	background-color: transparent;
 	border: 0;
 	cursor: pointer;
@@ -769,7 +719,6 @@ li.main_nav_list:last-child {
 	position: absolute;
 	top: 9px;
 	left: 2px;
-
 	width: 27px;
 	height: 5px;
 	background-color: #ffcccd;
@@ -794,7 +743,6 @@ li.main_nav_list:last-child {
 	background-color: #ffeeee;
 }
 
-/*Почему при нажатии на крестик появляется какая-то дурацкая рамка?*/
 .modal_content_close:active {
 	outline: none;
 	border: none;
@@ -830,12 +778,11 @@ li.main_nav_list:last-child {
 	color: rgba(68, 68, 68, 0.5);
 	font-family: Roboto, Arial, sans-serif;
 	font-weight: 400;
-
 	padding: 12px 14px 14px 14px;
 	margin: 9px 0 0 0;
-
 	width: 360px;
 	border: 2px solid #d7dcde;
+	display: block;
 }
 
 .login_field_letter {
@@ -844,16 +791,14 @@ li.main_nav_list:last-child {
 	color: rgba(68, 68, 68, 0.5);
 	font-family: Roboto, Arial, sans-serif;
 	font-weight: 400;
-
 	padding: 12px 14px 14px 14px;
-	margin: 9px 0 0 0;
-	
+	margin: 9px 0 0 0;	
 	width: 760px;
 	border: 2px solid #d7dcde;
 	height: 114px;
 	text-align: top;
-
 	resize: none;
+	display: block;
 }
 
 .login_field:hover,
@@ -910,7 +855,6 @@ color: rgba(68, 68, 68, 0.5);
 	display: inline-block;
 	padding: 17px 0 15px 0;
 	width: 260px;
-
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 18px;
@@ -918,8 +862,7 @@ color: rgba(68, 68, 68, 0.5);
 	text-align: center;
 	color: #ffffff;
 	text-transform: uppercase;
-	text-decoration: none;
-	
+	text-decoration: none;	
 	background-color: #fb565a;
 	border: none;
 	border-radius: 4px;
@@ -930,8 +873,6 @@ color: rgba(68, 68, 68, 0.5);
 	background-color: #e74246;
 }
 
-/*Что за странная тень появляется вокруг кнопки, когда её зажимешь? 
-Не вижу её в стилях*/
 .login_button:active {
 	background-color: #d7373b;
 	color: rgba(255, 255, 255, 0.3);
@@ -956,27 +897,26 @@ color: rgba(68, 68, 68, 0.5);
 	color: #000000;
 	font-weight: 700;
 	text-transform: uppercase;
-	margin: 0 0 23px 0;
+	margin: 0 0 22px 0;
 }
 
 .conacts_info_text {
 	font-size: 16px;
 	line-height: 18px;
 	color: #666666;
-	margin: 0 0 18px 0;
+	margin: 0 0 18px 1px;
 }
 
 .conacts_info_number {
 	font-size: 16px;
 	line-height: 18px;
 	color: #666666;
-	margin: 0 0 35px 0;
+	margin: 0 0 38px 1px;
 }
 
 .conacts_info_button {
 	display: inline-block;
-	padding: 17px 45px;
-
+	padding: 16px 45px;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 18px;
@@ -985,7 +925,6 @@ color: rgba(68, 68, 68, 0.5);
 	color: #ffffff;
 	text-transform: uppercase;
 	text-decoration: none;
-	
 	background-color: #fb565a;
 	border: none;
 	border-radius: 4px;
@@ -1004,7 +943,6 @@ color: rgba(68, 68, 68, 0.5);
 .contacts_map {
 	width: 100%;
 }
-
 
 /*Начало стилей футера*/
 
@@ -1037,11 +975,9 @@ color: rgba(68, 68, 68, 0.5);
 	display: inline-block;
 	width: 79px;
 	height: 79px;
-	
 	font-size: 0;
 	vertical-align: top;
 	text-decoration: none;
-
 	background: #e1e1e1 url("../img/sprite.png") no-repeat center;
 	border-radius: 50%;
 }
@@ -1098,7 +1034,6 @@ color: rgba(68, 68, 68, 0.5);
 	color: #444444;
 }
 
-
 /*!———Начало стилей каталога———*/
 
 .main_header_bg {
@@ -1139,9 +1074,8 @@ color: rgba(68, 68, 68, 0.5);
 }
 
 .filter_text_price {
-	margin: 0 0 55px 0;
+	margin: 0 0 53px 0;
 }
-
 
 /*Начало стилей ползунка*/
 
@@ -1229,7 +1163,6 @@ color: rgba(68, 68, 68, 0.5);
 	background: #f1f1f1;
 }
 
-
 /*Начало стилей радиокнопки*/
 
 .filter_text_grid {
@@ -1264,10 +1197,8 @@ color: rgba(68, 68, 68, 0.5);
 	position: absolute;
 	top: 0;
 	left: 1px;
-
 	width: 24px;
 	height: 24px;
-
 	border: 3px solid #b8b8b8;
 	border-radius: 50%;
 	margin: 0 0 0 0;
@@ -1294,10 +1225,8 @@ color: rgba(68, 68, 68, 0.5);
 	position: absolute;
 	left: 4px;
 	top: 4px;
- 
 	width: 10px;
 	height: 10px;
-
 	border-radius: 50%;
 	background-color: #b8b8b8;
 }
@@ -1310,7 +1239,6 @@ color: rgba(68, 68, 68, 0.5);
 	background-color: #ededed;
 }
 
-
 /*Начало стилей чекбоксов*/
 
 .filter_text_special {
@@ -1320,7 +1248,7 @@ color: rgba(68, 68, 68, 0.5);
 .checkbox {
 	font-size: 16px;
 	line-height: 20px;
-	margin: 0 0 43px 0;
+	margin: 0 0 46px 0;
 }
 
 .checkbox_button {
@@ -1344,16 +1272,12 @@ color: rgba(68, 68, 68, 0.5);
 
 .checkbox_indicator {
 	position: absolute;
-
 	left: 1px;
 	top: 0;
-
 	width: 27px;
 	height: 23px;
-
 	background: url("../img/sprite.png") no-repeat;
 	background-position: -40px -135px;
-
 	opacity: 0.4;
 }
 
@@ -1375,16 +1299,12 @@ color: rgba(68, 68, 68, 0.5);
 
 .checkbox_button input[type="checkbox"]:checked + .checkbox_indicator {
 	position: absolute;
-
 	left: 1px;
 	top: 0;
-
 	width: 27px;
 	height: 23px;
-
 	background: url("../img/sprite.png") no-repeat;
 	background-position: -40px -238px;
-
 	opacity: 0.4;
 }
 
@@ -1398,8 +1318,7 @@ color: rgba(68, 68, 68, 0.5);
 
 .show_button {
 	display: inline-block;
-	padding: 19px 89px;
-
+	padding: 17px 89px;
 	font-weight: 500;
 	font-family: Roboto, Arial, sans-serif;
 	font-size: 16px;
@@ -1410,8 +1329,7 @@ color: rgba(68, 68, 68, 0.5);
 	text-transform: uppercase;
 	text-decoration: none;
 	outline: none;
-	box-shadow:none;
-	
+	box-shadow:none;	
 	background-color: #eeeeee;
 	border: none;
 	border-radius: 4px;
@@ -1428,7 +1346,6 @@ color: rgba(68, 68, 68, 0.5);
 	border-top: 3px solid #bfbfbf;
 	padding: 16px 89px 19px 89px;
 }
-
 
 /*Начало стилей правой части страницы*/
 
@@ -1454,6 +1371,8 @@ color: rgba(68, 68, 68, 0.5);
 
 .models_filters_list {
 	float: right;
+	line-height: 0;
+	margin-right: 1px;
 }
 
 .models_filters_list li {
@@ -1480,7 +1399,6 @@ color: rgba(68, 68, 68, 0.5);
 	line-height: 18px;
 	color: #000000;
 	opacity: 0.3;
-	vertical-align: middle;
 }
 
 .models_filters_buttons:hover {
@@ -1497,7 +1415,6 @@ color: rgba(68, 68, 68, 0.5);
 	font-size: 14px;
 	line-height: 18px;
 	color: #000000;
-	vertical-align: middle;
 }
 
 .models_filters_triangle_active {
@@ -1505,8 +1422,6 @@ color: rgba(68, 68, 68, 0.5);
 	border-left: 4.5px solid transparent;
 	border-right: 4.5px solid transparent;
 	border-top: 9px solid #000;
-	padding: 0 0 0 0;
-	vertical-align: middle;
 }
 
 .models_filters_triangle {
@@ -1516,7 +1431,6 @@ color: rgba(68, 68, 68, 0.5);
 	border-top: 9px solid #000;
 	opacity: 0.3;
 	padding: 0 0 0 0;
-	vertical-align: middle;
 }
 
 .models_filters_list li:last-child {
@@ -1583,10 +1497,8 @@ color: rgba(68, 68, 68, 0.5);
 .browser_points {
 	margin: 0 9px 0 0;
 	background-color: #ffffff;
-	
 	width: 14px;
 	height: 14px;
-
 	border-radius: 50%;
 }
 
@@ -1626,23 +1538,21 @@ color: rgba(68, 68, 68, 0.5);
 	line-height: 18px;
 	color: #666;
 	text-align: center;
-	margin: 0 0 30px 0;
+	margin: 0 0 28px 0;
 }
 
 .models_cards_more_price {
 	display: inline-block;
-	padding: 19px 0 19px 0;
+	padding: 17px 0 19px 0;
 	margin: 0 60px 0 60px;
-	width: 200px;
-	
+	width: 200px;	
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 16px;
 	text-align: center;
 	color: #ffffff;
 	text-transform: uppercase;
-	text-decoration: none;
-	
+	text-decoration: none;	
 	background-color: #fb565a;
 	border: none;
 	border-radius: 4px;
@@ -1669,7 +1579,7 @@ color: rgba(68, 68, 68, 0.5);
 }
 
 .pagination li {
-	display: inline;
+	display: inline-block;
 }
 
 .pagination_button_link_active {
@@ -1677,9 +1587,7 @@ color: rgba(68, 68, 68, 0.5);
 	height: 50px;
 	display: inline-block;
 	vertical-align: middle;
-
 	margin: 0 11px 0 0;
-
 	font-weight: 500;
 	font-size: 16px;
 	vertical-align: top;
@@ -1687,22 +1595,17 @@ color: rgba(68, 68, 68, 0.5);
 	text-decoration: none;
 	color: #000000;
 	text-align: center;
-	padding-top: 10px;
-	
+	padding-top: 10px;	
 	border: 3px solid #dbdbdb;
 	border-radius: 3px;
 	cursor: pointer;
-
-
 }
 
 .pagination_button_link {
 	width:50px;
 	height: 50px;
 	display: inline-block;
-
 	margin: 0 11px 0 0;
-
 	font-weight: 500;
 	font-size: 16px;
 	vertical-align: top;
@@ -1710,8 +1613,7 @@ color: rgba(68, 68, 68, 0.5);
 	text-decoration: none;
 	color: #000000;
 	text-align: center;
-	padding-top: 13px;
-	
+	padding-top: 13px;	
 	background-color: #eeeeee;
 	border-radius: 3px;
 	cursor: pointer;
@@ -1731,9 +1633,7 @@ color: rgba(68, 68, 68, 0.5);
 	width: 260px;
 	height: 50px;
 	display: inline-block;
-
 	margin: 0 0 0 0;
-
 	font-weight: 500;
 	font-size: 16px;
 	vertical-align: top;
@@ -1741,8 +1641,7 @@ color: rgba(68, 68, 68, 0.5);
 	text-decoration: none;
 	color: #000000;
 	text-align: center;
-	padding-top: 13px;
-	
+	padding-top: 13px;	
 	background-color: #eeeeee;
 	border-radius: 3px;
 	cursor: pointer;
