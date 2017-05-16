@@ -912,6 +912,9 @@ color: rgba(68, 68, 68, 0.5);
 	line-height: 18px;
 	color: #666666;
 	margin: 0 0 38px 1px;
+	display: block;
+	text-decoration: none;
+	cursor: default;
 }
 
 .conacts_info_button {
